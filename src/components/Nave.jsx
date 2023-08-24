@@ -30,7 +30,9 @@ export default function Nav() {
   }, [width >= 720]);
 
   useEffect(() => {
-    width <= 720 ? setMenuOpen(false) : null;
+    if (width <= 720) {
+      setMenuOpen(false);
+    }
   }, [selected]);
 
   return (

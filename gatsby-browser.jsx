@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from './src/components/layout';
-import './src/styles/layout.css';
 
 // Logs when the client route changes
 export function onRouteUpdate({ location, prevLocation }) {
