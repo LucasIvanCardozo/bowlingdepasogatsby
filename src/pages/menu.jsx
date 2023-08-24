@@ -6,7 +6,7 @@ import '../styles/menu.css';
 import '../styles/itemCarta.css';
 import '../styles/marcas.css';
 import useIntersection from '../useIntersection';
-import menuData from '../db/menu.json';
+import menuData from '../db/menuData.json';
 
 export default function Menu() {
   const data = menuData.data;
