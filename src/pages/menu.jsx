@@ -44,14 +44,14 @@ export default function Menu() {
                 key={data.name}
                 ref={data.id == 0 ? elementRef5 : null}
                 isvisible={isVisible5 && data.id == 0 ? 'true' : 'false'}
-                onClick={() => {
+                onClick={() =>
                   categoria != data.id
                     ? (setCategoria(data.id),
                       data.subcategoriasBool
                         ? null
                         : setPagina({ categoria: data.id, subcategoria: 0 }))
-                    : null;
-                }}
+                    : null
+                }
                 open={pagina.categoria == data.id}
               >
                 <p className="carta_categoriasP">{data.name}</p>
