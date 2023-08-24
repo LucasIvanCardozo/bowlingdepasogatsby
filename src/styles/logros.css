@@ -1,0 +1,360 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 18em;
+  height: 60vw;
+  max-height: 50vh;
+  margin: 5vh 0;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.titulo_hContenedor {
+  display: flex;
+  position: relative;
+}
+
+.titulo_h {
+  position: relative;
+  font-family: bebasNeue;
+  font-size: 7em;
+}
+
+.titulo_h::before {
+  content: '';
+  position: absolute;
+  height: 80%;
+  width: 20px;
+  z-index: 15;
+  border-radius: 10px;
+  filter: blur(28px);
+  background-color: #fff;
+  opacity: 0;
+  transform: translateX(-0.2em);
+  transition: transform 2s;
+}
+
+.titulo_h[isvisible='true']::before {
+  animation-name: banner;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  transform: translateX(1.8em);
+}
+
+@keyframes banner {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.titulo_descripcion {
+  font-family: arialRounded;
+  margin: 0;
+  font-size: 1em;
+  width: 70vw;
+  max-width: 500px;
+  text-align: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6em;
+}
+
+.article_boxes {
+  display: flex;
+  align-items: center;
+}
+
+.article_boxes_score {
+  opacity: 0.7;
+  display: grid;
+  grid-template-rows: 9em;
+  grid-auto-columns: 9em;
+  grid-auto-flow: column;
+  border: 2px solid #000;
+  border-left: 0 solid #000;
+  border-right: 0 solid #000;
+}
+
+.section_100PalosContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20rem;
+  max-width: 800px;
+  font-size: 0.6rem;
+}
+
+.section_100Palos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section_100Palos_animation {
+  display: flex;
+  align-items: flex-end;
+}
+
+.section_100Palos_wind {
+  height: 3em;
+  width: 3em;
+  object-fit: contain;
+  opacity: 0.4;
+}
+
+.section_100Palos_wind[isvisible='true'] {
+  animation-name: wind;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+}
+
+@keyframes wind {
+  to {
+    opacity: 1;
+  }
+}
+
+.section_100Palos_ball {
+  position: relative;
+  height: 10em;
+  width: 10em;
+  margin-left: -1.3em;
+  margin-right: -2.5em;
+}
+
+.section_100Palos_ballImg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transform: translateX(-1.5em);
+}
+
+.section_100Palos_ballImg[isvisible='true'] {
+  animation-name: ball;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ball {
+  to {
+    transform: translateX(0em) rotate(1080deg);
+  }
+}
+
+.section_100Palos_textImg {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  object-fit: contain;
+  opacity: 0;
+}
+
+.section_100Palos_textImg[isvisible='true'] {
+  animation-name: text;
+  animation-duration: 0.8s;
+  animation-delay: 1.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes text {
+  to {
+    opacity: 1;
+  }
+}
+
+.section_100Palos_palos {
+  height: 8.5em;
+  aspect-ratio: 26/25;
+}
+
+.section_100Palos_flecha {
+  height: 5em;
+  transform: scaleX(1);
+}
+
+.section_100Palos_vaso {
+  height: 10em;
+}
+
+.section_130PalosContainer {
+  position: relative;
+  display: flex;
+  width: 85%;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 800px;
+  font-size: 0.6rem;
+}
+
+.comingsoon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.comingsoon_text {
+  display: inline;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 4em;
+  padding: 0.3em;
+  margin: 0;
+  color: #eee;
+  border-radius: 10px;
+  background-color: #777b;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  transform-origin: center;
+}
+
+.section_130Palos_wind {
+  height: 5em;
+  width: 5em;
+  object-fit: contain;
+  transform: rotateY(180deg);
+}
+
+.section_130Palos_ball {
+  position: relative;
+  height: 17em;
+  width: 17em;
+  margin-left: -4.8em;
+  margin-right: -2.5em;
+}
+
+.section_130Palos_ballImg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.section_130Palos_textImg {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  object-fit: contain;
+}
+
+.section_130Palos_palos {
+  height: 16em;
+  aspect-ratio: 26/25;
+}
+
+.article_records {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_records_nube {
+  position: relative;
+  aspect-ratio: 16/7;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_records_nubeImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: -1;
+  filter: drop-shadow(1px 1px 2px #000);
+}
+
+.section_records_title {
+  margin-top: .6em;
+  font-family: bebasNeue;
+  font-size: 1.9em;
+  text-align: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .titulo_h {
+    font-size: 7em;
+  }
+  .section_100PalosContainer {
+    font-size: 0.75em;
+  }
+  .section_130PalosContainer {
+    font-size: 0.75rem;
+  }
+  .article_boxes {
+    font-size: 1.2rem;
+  }
+  .section_100PalosContainer {
+    width: 27rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .titulo_h {
+    font-size: 8em;
+  }
+  .section_100PalosContainer {
+    font-size: 0.9rem;
+  }
+  .section_130PalosContainer {
+    font-size: 0.9rem;
+  }
+  .article_boxes {
+    font-size: 1.5rem;
+  }
+  .section_100PalosContainer {
+    width: 36rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .titulo_h {
+    font-size: 9em;
+  }
+  .section_100PalosContainer {
+    font-size: 1em;
+  }
+  .section_130PalosContainer {
+    font-size: 1rem;
+  }
+  .article_boxes {
+    font-size: 2.1rem;
+  }
+  .section_100PalosContainer {
+    width: 50rem;
+  }
+}

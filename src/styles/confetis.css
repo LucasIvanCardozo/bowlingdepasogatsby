@@ -1,0 +1,196 @@
+.confetis1 {
+  position: absolute;
+  height: 100px;
+  opacity: 0;
+  animation-name: confetis, gravedad;
+  animation-duration: 6s, 10s;
+  animation-timing-function: ease-out, ease;
+  animation-delay: 0.5s, 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.confetis2 {
+  position: absolute;
+  height: 100px;
+  right: 0;
+  opacity: 0;
+  transform: rotateY(180deg);
+  animation-name: confetis, gravedad2;
+  animation-duration: 6s, 10s;
+  animation-timing-function: ease-out, ease;
+  animation-delay: 0.5s, 1.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes confetis {
+  00% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes gravedad {
+  to {
+    transform: translateY(5em);
+  }
+}
+@keyframes gravedad2 {
+  to {
+    transform: translateY(5em) rotateY(180deg);
+  }
+}
+
+.confeti {
+  position: absolute;
+  left: 0;
+  height: 0.5rem;
+  width: 0.7rem;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transform: rotate(90deg) translate(0em) rotate(-90deg);
+}
+
+@keyframes balanceo1 {
+  to {
+    transform: rotate(5deg) translate(-0.5em) rotate(130deg) rotateX(690deg);
+  }
+}
+@keyframes balanceo2 {
+  to {
+    transform: rotate(5deg) translate(-3.5em) rotate(130deg) rotateX(690deg);
+  }
+}
+@keyframes balanceo3 {
+  to {
+    transform: rotate(10deg) translate(-1.5em) rotate(330deg) rotateX(390deg);
+  }
+}
+@keyframes balanceo4 {
+  to {
+    transform: rotate(10deg) translate(-4.5em) rotate(330deg) rotateX(390deg);
+  }
+}
+@keyframes balanceo5 {
+  to {
+    transform: rotate(20deg) translate(-2.5em) rotate(330deg) rotateX(330deg);
+  }
+}
+@keyframes balanceo6 {
+  to {
+    transform: rotate(20deg) translate(-5.5em) rotate(330deg) rotateX(150deg);
+  }
+}
+@keyframes balanceo7 {
+  to {
+    transform: rotate(30deg) translate(-3.5em) rotate(330deg) rotateX(510deg);
+  }
+}
+@keyframes balanceo8 {
+  to {
+    transform: rotate(30deg) translate(-0.5em) rotate(330deg) rotateX(510deg);
+  }
+}
+
+@keyframes balanceo9 {
+  to {
+    transform: rotate(40deg) translate(-4.5em) rotate(330deg) rotateX(-30deg);
+  }
+}
+
+@keyframes balanceo10 {
+  to {
+    transform: rotate(40deg) translate(-1.5em) rotate(330deg) rotateX(-30deg);
+  }
+}
+@keyframes balanceo11 {
+  to {
+    transform: rotate(50deg) translate(-3.3em) rotate(400deg) rotateX(130deg);
+  }
+}
+
+@keyframes x1 {
+  to {
+    transform: rotate(5deg) translate(-1em) rotate(180deg) rotateX(720deg);
+  }
+}
+@keyframes x2 {
+  to {
+    transform: rotate(5deg) translate(-4em) rotate(180deg) rotateX(720deg);
+  }
+}
+@keyframes x3 {
+  to {
+    transform: rotate(10deg) translate(-2em) rotate(400deg) rotateX(360deg);
+  }
+}
+@keyframes x4 {
+  to {
+    transform: rotate(10deg) translate(-5em) rotate(400deg) rotateX(360deg);
+  }
+}
+@keyframes x5 {
+  to {
+    transform: rotate(20deg) translate(-3em) rotate(400deg) rotateX(360deg);
+  }
+}
+@keyframes x6 {
+  to {
+    transform: rotate(20deg) translate(-6em) rotate(400deg) rotateX(180deg);
+  }
+}
+@keyframes x7 {
+  to {
+    transform: rotate(30deg) translate(-4em) rotate(400deg) rotateX(540deg);
+  }
+}
+@keyframes x8 {
+  to {
+    transform: rotate(30deg) translate(-1em) rotate(400deg) rotateX(540deg);
+  }
+}
+@keyframes x9 {
+  to {
+    transform: rotate(40deg) translate(-5em) rotate(400deg) rotateX(0deg);
+  }
+}
+@keyframes x10 {
+  to {
+    transform: rotate(40deg) translate(-2em) rotate(400deg) rotateX(0deg);
+  }
+}
+
+@keyframes x11 {
+  to {
+    transform: rotate(50deg) translate(-4em) rotate(400deg) rotateX(180deg);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .confeti {
+    font-size: 1.8rem;
+    height: 0.6rem;
+    width: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .confeti {
+    font-size: 2rem;
+    height: 0.7rem;
+    width: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .confeti {
+    font-size: 2.5rem;
+    height: 0.8rem;
+    width: 1rem;
+  }
+}

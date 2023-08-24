@@ -1,0 +1,23 @@
+.logoText{
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  z-index: 5;
+}
+
+.logoText_bowling {
+  font-size: 6em;
+  font-weight: bold;
+  font-family: bebasNeue;
+  margin: 0;
+}
+
+.logoText_dePaso {
+  font-size: 2em;
+  margin: 0;
+  margin-top: -.5em;
+  text-align: end;
+  -webkit-transform: translateX(.3em);
+      -ms-transform: translateX(.3em);
+          transform: translateX(.3em);
+}

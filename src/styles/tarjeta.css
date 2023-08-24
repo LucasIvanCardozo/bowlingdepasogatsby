@@ -1,0 +1,230 @@
+.section_records {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+.section_betters {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  gap: 3vw;
+}
+
+.section_betters_card:nth-child(2) {
+  order: 1;
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #b6b6b6 0%,
+      #acacac 8%,
+      #a3a3a3 30%,
+      #838383 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #c4c4c4 8%,
+      #999999 25%,
+      #818181 62.5%,
+      #555555 100%
+    );
+}
+
+.section_betters_card:first-child {
+  font-size: 1.2em;
+  width: 28vw;
+  order: 2;
+  max-width: 240px;
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+}
+.section_betters_card:last-child {
+  order: 3;
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #ffa237 0%,
+      #be7d33 8%,
+      #af7737 30%,
+      #b37d3f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #eed0ad 8%,
+      #e0a663 25%,
+      #e99f4b 62.5%,
+      #b87120 100%
+    );
+}
+
+.section_betters_card {
+  position: relative;
+  cursor: pointer;
+  padding: 0.3em;
+  padding-bottom: 0;
+  width: 25vw;
+  max-width: 200px;
+  border-radius: 3px;
+  aspect-ratio: 9/16;
+  box-shadow: 0 0 5px 0px #0009;
+  transition: transform 0.6s;
+  transition-timing-function: ease-in-out;
+}
+
+.section_betters_card[verinfo] {
+  transform: rotateY(180deg);
+}
+
+.section_betters_medal {
+  position: absolute;
+  width: 1.8em;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -70%);
+  transition-delay: 0.3s;
+  z-index: 1;
+}
+
+.section_betters_medal[verinfo] {
+  opacity: 0;
+}
+
+.section_betters_front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 9/16;
+  transition-delay: 0.3s;
+}
+
+.section_betters_front[verinfo] {
+  opacity: 0;
+}
+
+.section_betters_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section_betters_info {
+  font-size: 0.7em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #eee;
+  font-family: bebasNeue;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  width: max-content;
+}
+.section_betters_info_p {
+  margin: 0.1em;
+  margin-bottom: 0;
+}
+.section_betters_back {
+  display: flex;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 1em 0;
+  font-family: bebasNeue;
+  flex-direction: column;
+  text-align: center;
+  transform: rotateY(180deg);
+  transition-delay: 0.3s;
+}
+
+.section_betters_card:nth-child(2) {
+  color: #e7e7e7;
+}
+
+.section_betters_card:first-child {
+  color: #fff9d7;
+}
+
+.section_betters_card:last-child {
+  color: #faddcf;
+}
+
+.section_betters_back[verinfo] {
+  opacity: 1;
+}
+
+.section_betters_data {
+  filter: drop-shadow(0 0 2px #fff9) drop-shadow(2px 2px 0px #000);
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.section_betters_data > p {
+  margin: 0;
+}
+
+.section_betters_name {
+}
+
+.section_betters_age {
+  letter-spacing: 0.2em;
+}
+.section_betters_record {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+.section_betters_pin {
+  position: absolute;
+  filter: invert(1);
+  opacity: 0.3;
+  top: 50%;
+  left: 50%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.section_betters_record_p {
+  filter: drop-shadow(0 0 2px #fff9) drop-shadow(2px 2px 0px #000);
+  font-size: 4em;
+  margin: 0;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .section_records {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .section_records {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section_records {
+    font-size: 1.5em;
+  }
+}
