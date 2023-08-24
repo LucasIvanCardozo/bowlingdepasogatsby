@@ -4,7 +4,7 @@ import useIntersection from '../useIntersection';
 import { Link } from 'gatsby';
 import LogoTexto from './logoTexto';
 
-export default function Nav() {
+export default function Nave() {
   const [selected, setSelected] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const [elementRef, isVisible] = useIntersection({
