@@ -1,4 +1,4 @@
-.main {
+.main_menu {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -38,14 +38,14 @@
 }
 
 .titulo_h[isvisible='true']::before {
-  animation-name: banner;
+  animation-name: bannerMenu;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   transform: translateX(2.5em);
 }
 
-@keyframes banner {
+@keyframes bannerMenu {
   0% {
     opacity: 0;
   }

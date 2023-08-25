@@ -36,7 +36,7 @@ export default function Menu() {
 
   return (
     <>
-      <main className="main">
+      <main className="main_menu">
         <div className="titulo">
           <h1
             className="titulo_h"

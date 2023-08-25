@@ -1,4 +1,4 @@
-.main {
+.main_historia {
   width: 100%;
   min-height: 15em;
   height: 100vw;
@@ -117,7 +117,7 @@
   margin: 0;
 }
 
-#article {
+.article_historia {
   max-width: 750px;
   margin: auto;
   margin-bottom: 2em;
@@ -157,16 +157,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
-}
-
-.intro_data {
-}
-
-.intro_title {
-}
-
-.intro_text {
 }
 
 .intro_img {
@@ -177,19 +167,19 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .main {
+  .main_historia {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .main {
+  .main_historia {
     font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .main {
+  .main_historia {
     font-size: 2.1rem;
   }
 }

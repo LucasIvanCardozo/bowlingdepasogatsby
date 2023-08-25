@@ -1,4 +1,4 @@
-.main {
+.main_index {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,14 +51,14 @@
 }
 
 .main_banner[isvisible='true']::before {
-  animation-name: banner;
+  animation-name: bannerIndex;
   animation-duration: 1s;
   animation-delay: 1.3s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 
-@keyframes banner {
+@keyframes bannerIndex {
   0% {
     transform: translateX(-3em);
     opacity: 0;
@@ -117,7 +117,7 @@
     transform: translateX(-1.7em) rotate(20deg);
   }
 }
-.article {
+.article_index {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,19 +416,19 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .main {
+  .main_index {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .main {
+  .main_index {
     font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .main {
+  .main_index {
     font-size: 2.1rem;
   }
 }

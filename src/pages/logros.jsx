@@ -94,7 +94,7 @@ export default function Logros() {
 
   return (
     <>
-      <main className="main">
+      <main className="main_logros">
         <div className="titulo">
           <div className="titulo_hContenedor">
             <Confetis />
@@ -111,7 +111,7 @@ export default function Logros() {
           <p className="titulo_descripcion">merece ser recompenzado</p>
         </div>
       </main>
-      <article className="article">
+      <article className="article_logros">
         <div className="article_boxes">
           <div className="article_boxes_score">
             <Anotacion

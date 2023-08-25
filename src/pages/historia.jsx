@@ -18,7 +18,7 @@ export default function Historia() {
   });
   return (
     <>
-      <main className="main">
+      <main className="main_historia">
         <div
           className="main_container"
           ref={elementRef}
@@ -40,7 +40,7 @@ export default function Historia() {
           </header>
         </div>
       </main>
-      <article id="article">
+      <article className="article_historia">
         <div className="leftBar"></div>
         <section className="sections">
           <section className="intro">

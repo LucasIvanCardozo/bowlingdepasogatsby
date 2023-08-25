@@ -27,7 +27,7 @@ const IndexPage = () => {
 
   return (
     <>
-      <main className="main">
+      <main className="main_index">
         <div
           className="main_banner"
           ref={elementRef4}
@@ -51,7 +51,7 @@ const IndexPage = () => {
           />
         </div>
       </main>
-      <article className="article">
+      <article className="article_index">
         <section className="section_intro">
           <div className="section_intro_text">
             <p className="section_intro_text_p1">

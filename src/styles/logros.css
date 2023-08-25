@@ -1,4 +1,4 @@
-.main {
+.main_logros {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -43,14 +43,14 @@
 }
 
 .titulo_h[isvisible='true']::before {
-  animation-name: banner;
+  animation-name: bannerLogros;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
   transform: translateX(1.8em);
 }
 
-@keyframes banner {
+@keyframes bannerLogros {
   0% {
     opacity: 0;
   }
@@ -77,7 +77,7 @@
   text-align: center;
 }
 
-.article {
+.article_logros {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,13 +156,13 @@
 }
 
 .section_100Palos_ballImg[isvisible='true'] {
-  animation-name: ball;
+  animation-name: ballLogros;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes ball {
+@keyframes ballLogros {
   to {
     transform: translateX(0em) rotate(1080deg);
   }
