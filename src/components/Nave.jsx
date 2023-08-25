@@ -10,7 +10,7 @@ export default function Nave() {
   const [elementRef, isVisible] = useIntersection({
     tresholfd: 0,
   });
-  const [width, setWidth] = useState();
+  const [width, setWidth] = useState(0);
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -26,14 +26,23 @@ export default function Nave() {
   };
 
   useEffect(() => {
-    setMenuOpen(false);
-  }, [width >= 720]);
+    if (width >= 720) setMenuOpen(false);
+  }, [width]);
 
   useEffect(() => {
-    if (width <= 720) {
-      setMenuOpen(false);
-    }
+    if (width <= 720) setMenuOpen(false);
   }, [selected]);
+
+  const handleNav = (page) => {
+    setSelected(page);
+    setMenuOpen(false);
+  };
+
+  const handleMenu = () => {
+    if (menuOpen) {
+      setMenuOpen(!menuOpen);
+    }
+  };
 
   return (
     <nav
@@ -43,7 +52,8 @@ export default function Nave() {
     >
       <div
         className="nav_background"
-        onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : null)}
+        onClick={() => handleMenu()}
+        onKeyDown={() => handleMenu()}
         open={menuOpen}
       ></div>
       <div className="nav_logo">
@@ -61,11 +71,12 @@ export default function Nave() {
       </button>
       <ul className="nav_ul" open={menuOpen}>
         <li
-          className={`nav_li${selected == 1 ? ' nav_selected' : ''}`}
-          onClick={() => (setSelected(1), setMenuOpen(false))}
+          className={`nav_li${selected === 1 ? ' nav_selected' : ''}`}
+          onClick={() => handleNav(1)}
+          onKeyDown={() => handleNav(1)}
         >
           <Link
-            className={`nav_link${selected == 1 ? ' nav_link_selected' : ''}`}
+            className={`nav_link${selected === 1 ? ' nav_link_selected' : ''}`}
             to="/"
           >
             INICIO
@@ -83,33 +94,36 @@ export default function Nave() {
           </Link>
         </li>*/}
         <li
-          className={`nav_li${selected == 3 ? ' nav_selected' : ''}`}
-          onClick={() => (setSelected(3), setMenuOpen(false))}
+          className={`nav_li${selected === 3 ? ' nav_selected' : ''}`}
+          onClick={() => handleNav(3)}
+          onKeyDown={() => handleNav(3)}
         >
           <Link
-            className={`nav_link${selected == 3 ? ' nav_link_selected' : ''}`}
+            className={`nav_link${selected === 3 ? ' nav_link_selected' : ''}`}
             to="/menu"
           >
             MENU
           </Link>
         </li>
         <li
-          className={`nav_li${selected == 4 ? ' nav_selected' : ''}`}
-          onClick={() => (setSelected(4), setMenuOpen(false))}
+          className={`nav_li${selected === 4 ? ' nav_selected' : ''}`}
+          onClick={() => handleNav(4)}
+          onKeyDown={() => handleNav(4)}
         >
           <Link
-            className={`nav_link${selected == 4 ? ' nav_link_selected' : ''}`}
+            className={`nav_link${selected === 4 ? ' nav_link_selected' : ''}`}
             to="/logros"
           >
             LOGROS
           </Link>
         </li>
         <li
-          className={`nav_li${selected == 6 ? ' nav_selected' : ''}`}
-          onClick={() => (setSelected(6), setMenuOpen(false))}
+          className={`nav_li${selected === 6 ? ' nav_selected' : ''}`}
+          onClick={() => handleNav(6)}
+          onKeyDown={() => handleNav(6)}
         >
           <Link
-            className={`nav_link${selected == 6 ? ' nav_link_selected' : ''}`}
+            className={`nav_link${selected === 6 ? ' nav_link_selected' : ''}`}
             to="/historia"
           >
             HISTORIA
@@ -118,7 +132,8 @@ export default function Nave() {
 
         <li
           className="nav_li"
-          onClick={() => (setSelected(5), setMenuOpen(false))}
+          onClick={() => handleNav(5)}
+          onKeyDown={() => handleNav(5)}
         >
           <Link className="nav_link" to="#contactos">
             CONTACTOS

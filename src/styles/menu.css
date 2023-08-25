@@ -10,14 +10,6 @@
   margin: 5vh 0;
 }
 
-.logoText_bowling {
-  font-size: 1.8rem;
-}
-
-.logoText_dePaso {
-  font-size: 0.8rem;
-}
-
 .titulo {
   display: flex;
   flex-direction: column;

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import '../styles/logoTexto.css';
 
 export default function LogoTexto({ color }) {
   return (

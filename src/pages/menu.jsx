@@ -18,6 +18,22 @@ export default function Menu() {
   const [elementRef5, isVisible5] = useIntersection({
     treshold: 0,
   });
+
+  const handleCategoria = (categoria, data) => {
+    if (categoria !== data.id) {
+      setCategoria(data.id);
+      if (!data.subcategoriasBool)
+        setPagina({ categoria: data.id, subcategoria: 0 });
+    }
+  };
+
+  const handleSubCategoria = (categoria, data) => {
+    setPagina({
+      categoria: categoria,
+      subcategoria: data.id,
+    });
+  };
+
   return (
     <>
       <main className="main">
@@ -42,17 +58,10 @@ export default function Menu() {
               <li
                 className="carta_categoriasLi"
                 key={data.name}
-                ref={data.id == 0 ? elementRef5 : null}
-                isvisible={isVisible5 && data.id == 0 ? 'true' : 'false'}
-                onClick={() =>
-                  categoria != data.id
-                    ? (setCategoria(data.id),
-                      data.subcategoriasBool
-                        ? null
-                        : setPagina({ categoria: data.id, subcategoria: 0 }))
-                    : null
-                }
-                open={pagina.categoria == data.id}
+                ref={data.id === 0 ? elementRef5 : null}
+                isvisible={isVisible5 && data.id === 0 ? 'true' : 'false'}
+                onClick={() => handleCategoria(categoria, data)}
+                open={pagina.categoria === data.id}
               >
                 <p className="carta_categoriasP">{data.name}</p>
               </li>
@@ -64,12 +73,7 @@ export default function Menu() {
                     <li
                       className="carta_subcategoriasLi"
                       key={data.name}
-                      onClick={() =>
-                        setPagina({
-                          categoria: categoria,
-                          subcategoria: data.id,
-                        })
-                      }
+                      onClick={() => handleSubCategoria(categoria, data)}
                     >
                       <p className="carta_subcategoriasP">{data.name}</p>
                     </li>
