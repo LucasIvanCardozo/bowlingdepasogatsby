@@ -1,4 +1,4 @@
-.itemCarta {
+.container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -8,7 +8,7 @@
   gap: .5em;
 }
 
-.itemCarta_titulo {
+.container > h2 {
   margin: 0;
   font-size: 2em;
   color: #252525;
@@ -17,7 +17,7 @@
   border-bottom: 1px solid #0003;
 }
 
-.itemCarta_ul {
+.container > ul {
   padding: 0;
   margin: 0;
   display: flex;
@@ -25,23 +25,18 @@
   gap: .1em;
 }
 
-.itemCarta_adicional_titulo {
-  text-transform: capitalize;
-  font-size: 1.1em;
-  margin-top: 5px;
-}
-
-.itemCarta_li {
+.product {
   margin: 1px;
   display: flex;
   flex-wrap: wrap;
 }
-.itemCarta_li_data {
+
+.productData {
   display: flex;
   width: 100%;
 }
 
-.itemCarta_li_nombre {
+.productName {
   font-size: 1em;
   margin: 0;
   min-width: max-content;
@@ -49,23 +44,22 @@
 
 }
 
-.itemCarta_li_puntosContenedor{
+.dots{
   flex-grow: 1;
   width: min-content;
   overflow: hidden;
 }
 
-.itemCarta_li_puntos {
+.dots > p {
   margin: 0;
 
 }
 
-.itemCarta_li_precio {
+.productPrice {
   margin: 0;
-
 }
 
-.itemCarta_li_descripcion {
+.productDescription {
   font-size: 0.8em;
   margin: 0;
   color: #444;
@@ -73,7 +67,13 @@
   font-family: sans-serif;
 }
 
-.itemCarta_adicional_p {
+.additional > h4{
+  text-transform: capitalize;
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+.additional > p {
   font-size: 0.8em;
   margin: 0;
 }

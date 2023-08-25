@@ -1,10 +1,8 @@
 import * as React from 'react';
 import { useState } from 'react';
-import ItemCarta from '../components/itemCarta';
-import Marcas from '../components/marcas';
-import '../styles/menu.css';
-import '../styles/itemCarta.css';
-import '../styles/marcas.css';
+import ItemCarta from '../components/ItemCarta';
+import Marcas from '../components/Marcas';
+import '../styles/pages/menu.css';
 import useIntersection from '../useIntersection';
 import menuData from '../db/menuData.json';
 

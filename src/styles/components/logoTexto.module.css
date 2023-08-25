@@ -1,18 +1,18 @@
-.logoText{
+.container{
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   z-index: 5;
 }
 
-.logoText_bowling {
+.title {
   font-size: 6em;
   font-weight: bold;
   font-family: bebasNeue;
   margin: 0;
 }
 
-.logoText_dePaso {
+.subTitle {
   font-size: 2em;
   margin: 0;
   margin-top: -.5em;

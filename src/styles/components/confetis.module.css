@@ -1,0 +1,81 @@
+
+.confetisLeft {
+  position: absolute;
+  height: 100px;
+  opacity: 0;
+  animation-duration: 6s, 10s;
+  animation-timing-function: ease-out, ease;
+  animation-delay: 0.5s, 1.2s;
+  animation-fill-mode: forwards;
+  animation-name: confetisOpacity, gravedadLeft;
+}
+
+.confetisRight {
+  position: absolute;
+  height: 100px;
+  opacity: 0;
+  animation-duration: 6s, 10s;
+  animation-timing-function: ease-out, ease;
+  animation-delay: 0.5s, 1.2s;
+  animation-fill-mode: forwards;
+  right: 0;
+  transform: rotateY(180deg);
+  animation-name: confetisOpacity, gravedadRight;
+}
+
+@keyframes confetisOpacity {
+  00% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes gravedadLeft {
+  to {
+    transform: translateY(5em);
+  }
+}
+
+@keyframes gravedadRight {
+  to {
+    transform: translateY(5em) rotateY(180deg);
+  }
+}
+
+.confeti {
+  position: absolute;
+  left: 0;
+  height: 0.3em;
+  width: 0.5em;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transform: rotate(90deg) translate(0em) rotate(-90deg);
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .confeti {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .confeti {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .confeti {
+    font-size: 2.5rem;
+  }
+}

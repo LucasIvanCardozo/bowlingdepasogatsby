@@ -6,7 +6,7 @@ import circuloNegado from '../assets/images/circuloNegado.webp';
 import inauguracion from '../assets/images/inauguracion.webp';
 import cierre from '../assets/images/cierre.webp';
 import abrimos from '../assets/images/abrimos.webp';
-import '../styles/historia.css';
+import '../styles/pages/historia.css';
 import useIntersection from '../useIntersection';
 
 export default function Historia() {

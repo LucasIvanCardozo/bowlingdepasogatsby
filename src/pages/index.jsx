@@ -1,7 +1,7 @@
 import * as React from 'react';
 import useIntersection from '../useIntersection';
 import LogoTexto from '../components/logoTexto';
-import '../styles/index.css';
+import '../styles/pages/index.css';
 import estrellas from '../assets/images/estrellas.svg';
 import bolo from '../assets/images/boloBlanco.svg';
 import imagen1 from '../assets/images/imagen1.webp';

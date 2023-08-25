@@ -1,20 +1,21 @@
 import * as React from 'react';
+import * as styles from '../styles/components/tarjetaAlbum.module.css';
 import bolo from '../assets/images/boloBlanco.svg';
 
 export default function TarjetaAlbum({ name, lastName, age, img, record }) {
   return (
-    <li className="section_album_li">
-      <img className="section_album_img" src={img} alt="" loading="lazy" />
-      <div className="section_album_data">
-        <p className="section_album_name">
+    <li className={styles.container}>
+      <img src={img} alt="" loading="lazy" />
+      <div className={styles.personData}>
+        <p>
           {name} {lastName}
         </p>
-        <div className="section_album_subLi">
-          <p className="section_album_age">{age} años</p>
-          <div className="section_album_record">
-            <p className="section_album_score">{record}</p>
-            <div className="section_album_pin">
-              <img className="section_album_pinImg" src={bolo} alt="" />
+        <div className={styles.underLine}>
+          <p>{age} años</p>
+          <div className={styles.record}>
+            <p>{record}</p>
+            <div className={styles.pin}>
+              <img src={bolo} alt="" />
             </div>
           </div>
         </div>

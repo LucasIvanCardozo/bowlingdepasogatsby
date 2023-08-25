@@ -1,4 +1,4 @@
-.anotacion {
+.side {
   font-family: bebasNeue;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   border: 2px solid #000;
 }
 
-.anotacion_sup {
+.sideSup {
   display: grid;
   width: 100%;
   height: min-content;
@@ -16,7 +16,7 @@
   grid-auto-flow: column;
 }
 
-.anotacion_box {
+.sideBox {
   border-left: 4px solid #000;
   border-bottom: 4px solid #000;
   height: 100%;
@@ -24,25 +24,25 @@
   justify-content: center;
   align-items: center;
 }
-.anotacion_box:first-child {
+.sideBox:first-child {
   border-left: 0em solid #000;
   border-bottom: 0em solid #000;
 }
-.anotacion_text {
+.side p {
   font-size: 2.3em;
   margin: 0;
 }
-.anotacion_inf {
+.sideInf {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.anotacion_inf > .anotacion_text {
+.sideInf > p {
   font-size: 4em;
 }
 
-.special {
+.center {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@
   box-shadow: 0 0 2em .5em #eee;
 }
 
-.special_sup {
+.centerSup {
   display: grid;
   width: 100%;
   height: min-content;
@@ -63,7 +63,7 @@
   grid-auto-flow: column;
 }
 
-.special_box {
+.centerBox {
   border-left: 4px solid #000;
   border-bottom: 4px solid #000;
   height: 100%;
@@ -72,36 +72,36 @@
   align-items: center;
 }
 
-.special_box:first-child {
+.centerBox:first-child {
   border-left: 0em solid #000;
   border-bottom: 0em solid #000;
 }
 
-.special_text {
+.centerText {
   font-family: bebasNeue;
   text-align: center;
 }
-.special_text > p:first-child {
+
+.centerText > p:first-child {
   font-size: 0.9em;
   margin: 0;
 }
-.special_text > p:last-child {
+
+.centerText > p:last-child {
   font-size: 1.2em;
   margin: 0;
 }
-.special_inf {
+
+.centerInf {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.special_inf_text {
-  font-size: 3em;
-}
-.special_inf_text > p {
+.centerInf > p {
   margin: 0;
   font-family: bebasNeue;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 3.3em;
 }

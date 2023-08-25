@@ -1,11 +1,7 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import people from '../db/dbRecords.json';
-import '../styles/logros.css';
-import '../styles/confetis.css';
-import '../styles/anotacion.css';
-import '../styles/tarjeta.css';
-import '../styles/tarjetaAlbum.css';
+import '../styles/pages/logros.css';
 import useIntersection from '../useIntersection';
 import nube from '../assets/images/nube.webp';
 import wind from '../assets/images/viento.svg';
@@ -18,7 +14,7 @@ import text130 from '../assets/images/130PalosTexto.svg';
 import flecha from '../assets/images/flecha.svg';
 import Confetis from '../components/confetis';
 import Anotacion from '../components/anotacion';
-import Tarjeta from '../components/tarjeta';
+import Tarjeta from '../components/Tarjeta';
 import TarjetaAlbum from '../components/tarjetaAlbum';
 
 export default function Logros() {
@@ -54,7 +50,7 @@ export default function Logros() {
 
     const winnersAux = lastMonth.slice(0, 3);
     const totalPeopleAux = lastMonth.reduce((acc, item) => {
-      if (!winners.includes(item)) {
+      if (!winnersAux.includes(item)) {
         acc.push(item);
       }
       return acc;

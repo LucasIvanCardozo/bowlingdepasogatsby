@@ -278,6 +278,20 @@
   align-items: center;
 }
 
+.section_records {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.section_betters {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  gap: 3vw;
+}
+
 .section_records_nube {
   position: relative;
   aspect-ratio: 16/7;
@@ -299,10 +313,38 @@
 }
 
 .section_records_title {
-  margin-top: .6em;
+  margin-top: 0.6em;
   font-family: bebasNeue;
   font-size: 1.9em;
   text-align: center;
+}
+
+.section_album {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: .5em;
+  width: 75%;
+  max-width: 650px;
+  font-family: bebasNeue;
+  background-color: #424242;
+  margin-bottom: 3em;
+}
+
+.section_album_title {
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #c3c3c3;
+}
+
+.section_album_ul {
+  display: grid;
+  gap: .5em;
+  margin: .5em 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -321,6 +363,12 @@
   .section_100PalosContainer {
     width: 27rem;
   }
+  .section_records {
+    font-size: 1.2em;
+  }
+    .section_album {
+      font-size: 1.1em;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -339,6 +387,12 @@
   .section_100PalosContainer {
     width: 36rem;
   }
+  .section_records {
+    font-size: 1.3em;
+  }
+    .section_album {
+      font-size: 1.2em;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -357,4 +411,10 @@
   .section_100PalosContainer {
     width: 50rem;
   }
+  .section_records {
+    font-size: 1.5em;
+  }
+     .section_album {
+       font-size: 1.3em;
+     }
 }

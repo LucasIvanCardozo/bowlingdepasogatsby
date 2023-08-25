@@ -1,0 +1,44 @@
+.container {
+  background-color: #2e2d2d;
+  padding: 0.2em;
+  aspect-ratio: 9/16;
+  color: #ddd;
+}
+
+.container > img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 9/16;
+}
+
+.personData {
+  font-size: 0.9em;
+}
+
+.personData p {
+  margin: 0;
+}
+.underLine {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.record {
+  display: flex;
+  font-size: 1.1em;
+  gap: 0.1em;
+  color: #e7c730;
+}
+
+.pin {
+  height: 0.78em;
+  filter: invert(1) invert(92%) sepia(61%) saturate(7411%) hue-rotate(331deg)
+    brightness(96%) contrast(88%);
+}
+
+.pin > img {
+  height: 100%;
+  object-fit: contain;
+}

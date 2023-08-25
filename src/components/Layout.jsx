@@ -1,15 +1,13 @@
 import * as React from 'react';
-import Footer from './footer';
-import Nave from './Nave';
-import '../styles/nav.css';
-import '../styles/footer.css';
+import Footer from './Footer';
+import Navigation from './Navigation';
 import '../styles/layout.css';
-import '../styles/logoTexto.css';
+import '../styles/animations.css';
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Nave />
+      <Navigation />
       {children}
       <Footer />
     </>

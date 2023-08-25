@@ -132,7 +132,7 @@
   gap: 4em;
   border-top: 5px solid #555;
   border-bottom: 5px solid #555;
-  background-image: url('../assets/images/fondoInicio.webp');
+  background-image: url('../../assets/images/fondoInicio.webp');
   background-size: cover;
   -webkit-box-shadow: 0 0px 5px 0px #222;
   box-shadow: 0 0px 5px 0px #222;

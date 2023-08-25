@@ -1,10 +1,10 @@
-.marcas{
+.container{
   width: 100%;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-.marcas_ul{
+.container > ul{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,13 +14,13 @@
       flex-wrap: wrap;
 }
 
-.marcas_li{
+.container li{
   height: 70px;
   width: 120px;
   margin: 0 5px;
 }
 
-.marcas_img{
+.container img{
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
