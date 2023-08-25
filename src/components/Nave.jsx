@@ -53,7 +53,6 @@ export default function Nave() {
       <div
         className="nav_background"
         onClick={() => handleMenu()}
-        onKeyDown={() => handleMenu()}
         open={menuOpen}
       ></div>
       <div className="nav_logo">
@@ -73,7 +72,6 @@ export default function Nave() {
         <li
           className={`nav_li${selected === 1 ? ' nav_selected' : ''}`}
           onClick={() => handleNav(1)}
-          onKeyDown={() => handleNav(1)}
         >
           <Link
             className={`nav_link${selected === 1 ? ' nav_link_selected' : ''}`}
@@ -96,7 +94,6 @@ export default function Nave() {
         <li
           className={`nav_li${selected === 3 ? ' nav_selected' : ''}`}
           onClick={() => handleNav(3)}
-          onKeyDown={() => handleNav(3)}
         >
           <Link
             className={`nav_link${selected === 3 ? ' nav_link_selected' : ''}`}
@@ -108,7 +105,6 @@ export default function Nave() {
         <li
           className={`nav_li${selected === 4 ? ' nav_selected' : ''}`}
           onClick={() => handleNav(4)}
-          onKeyDown={() => handleNav(4)}
         >
           <Link
             className={`nav_link${selected === 4 ? ' nav_link_selected' : ''}`}
@@ -120,7 +116,6 @@ export default function Nave() {
         <li
           className={`nav_li${selected === 6 ? ' nav_selected' : ''}`}
           onClick={() => handleNav(6)}
-          onKeyDown={() => handleNav(6)}
         >
           <Link
             className={`nav_link${selected === 6 ? ' nav_link_selected' : ''}`}
@@ -130,11 +125,7 @@ export default function Nave() {
           </Link>
         </li>
 
-        <li
-          className="nav_li"
-          onClick={() => handleNav(5)}
-          onKeyDown={() => handleNav(5)}
-        >
+        <li className="nav_li" onClick={() => handleNav(5)}>
           <Link className="nav_link" to="#contactos">
             CONTACTOS
           </Link>

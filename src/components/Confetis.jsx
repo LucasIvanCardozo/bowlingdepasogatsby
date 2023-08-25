@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 export default function Confetis({ direction }) {
   const [confetis, setConfetis] = useState([]);
   const colors = ['red', 'green', 'blue', 'orange', 'yellow', 'gold'];
+
   const getRandomStyles = useCallback(async (val) => {
     let num = 1 + Math.floor(Math.random() * 10);
     let time = 1 + Math.random() * 1.5;
@@ -16,6 +17,7 @@ export default function Confetis({ direction }) {
       animation: `${time}s ease-out .5s x${num} forwards, balanceo${num} ease-in-out ${iter}s 12 alternate forwards 2s`,
     };
   }, []);
+  
   const pushStyles = useCallback(async () => {
     for (let i = 0; i < 10; i++) {
       const style = await getRandomStyles();
