@@ -1,49 +1,27 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# Página web del Bowling de Mar del Plata
 
-## 🚀 Quick start
+¡Bienvenido al repositorio de la página web del Bowling de Mar del Plata! Aquí encontrarás toda la información necesaria para comprender y utilizar este proyecto.
 
-1.  **Create a Gatsby site.**
+## Descripción
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+Este repositorio contiene el código fuente de una página web responsive para el Bowling de Mar del Plata. La página web se ha desarrollado utilizando React JS, una biblioteca de JavaScript de código abierto ampliamente utilizada para construir interfaces de usuario interactivas.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+El objetivo de esta página web es proporcionar a los visitantes del Bowling de Mar del Plata una experiencia en línea atractiva e informativa. La página está diseñada para ser compatible con múltiples dispositivos y tamaños de pantalla, lo que garantiza que los usuarios puedan acceder a la información fácilmente, ya sea que estén en una computadora de escritorio, una tableta o un teléfono móvil.
 
-2.  **Start developing.**
+## Características
 
-    Navigate into your new site’s directory and start it up.
+- **Responsive**: La página se adapta automáticamente a diferentes tamaños de pantalla, proporcionando una experiencia de usuario óptima en dispositivos móviles, tabletas y computadoras de escritorio.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- **SEO**: Se han aplicado prácticas de optimización para motores de búsqueda (SEO) para mejorar la visibilidad de la página en los resultados de búsqueda y atraer a más visitantes.
 
-3.  **Open the code and start customizing!**
+- **React JS**: La página web se ha desarrollado utilizando React JS, lo que permite una estructura modular y un flujo de trabajo eficiente en el desarrollo de interfaces de usuario.
 
-    Your site is now running at http://localhost:8000!
+## Licencia
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+Este proyecto se distribuye bajo la Licencia MIT. Para obtener más información, consulta el archivo [LICENSE](LICENSE) del repositorio.
 
-4.  **Learn more**
+## Contacto
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Si tienes alguna pregunta o comentario sobre este proyecto, no dudes en ponerte en contacto con nosotros. Tu feedback es muy valioso para nosotros.
 
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+¡Esperamos que disfrutes utilizando la página web del Bowling de Mar del Plata! ¡Gracias por tu interés!
