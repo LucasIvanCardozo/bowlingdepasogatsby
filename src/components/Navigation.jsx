@@ -14,6 +14,9 @@ export default function Navigation() {
   });
 
   useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
     setWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
 
@@ -21,10 +24,6 @@ export default function Navigation() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-  const handleResize = () => {
-    setWidth(window.innerWidth);
-  };
 
   useEffect(() => {
     if (width >= 720) setMenuOpen(false);
@@ -74,28 +73,38 @@ export default function Navigation() {
           className={selected === 1 ? styles.selected : ''}
           onClick={() => handleNav(1)}
         >
-          <Link className={styles.link} to="/">INICIO</Link>
+          <Link className={styles.link} to="/">
+            INICIO
+          </Link>
         </li>
         <li
           className={selected === 3 ? styles.selected : ''}
           onClick={() => handleNav(3)}
         >
-          <Link className={styles.link} to="/menu">MENU</Link>
+          <Link className={styles.link} to="/menu">
+            MENU
+          </Link>
         </li>
         <li
           className={selected === 4 ? styles.selected : ''}
           onClick={() => handleNav(4)}
         >
-          <Link className={styles.link} to="/logros">LOGROS</Link>
+          <Link className={styles.link} to="/logros">
+            LOGROS
+          </Link>
         </li>
         <li
           className={selected === 6 ? styles.selected : ''}
           onClick={() => handleNav(6)}
         >
-          <Link className={styles.link} to="/historia">HISTORIA</Link>
+          <Link className={styles.link} to="/historia">
+            HISTORIA
+          </Link>
         </li>
         <li onClick={() => handleNav(5)}>
-          <Link className={styles.link} to="#contactos">CONTACTOS</Link>
+          <Link className={styles.link} to="#contactos">
+            CONTACTOS
+          </Link>
         </li>
       </ul>
     </nav>

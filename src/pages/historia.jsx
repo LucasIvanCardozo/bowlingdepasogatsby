@@ -33,7 +33,7 @@ export default function Historia() {
       </main>
       <article className={styles.article}>
         <div></div>
-        <section className={styles.sectionsList}>
+        <div className={styles.sectionsList}>
           <section>
             <img src={tijeras} alt="" />
             <div>
@@ -85,7 +85,7 @@ export default function Historia() {
               <img src={abrimos} alt="" />
             </div>
           </section>
-        </section>
+        </div>
       </article>
     </>
   );

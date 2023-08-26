@@ -46,7 +46,7 @@ export default function Menu() {
         </div>
       </main>
       <article className={styles.carta}>
-        <nav className={styles.cartaNav}>
+        <div className={styles.cartaNav}>
           <ul>
             {data.map((data) => (
               <li
@@ -61,7 +61,7 @@ export default function Menu() {
               </li>
             ))}
             {data[categoria].subcategoriasBool ? (
-              <nav className={styles.subcategoriasNav}>
+              <div className={styles.subcategoriasNav}>
                 <ul>
                   {data[categoria].data.map((data) => (
                     <li
@@ -73,10 +73,10 @@ export default function Menu() {
                     </li>
                   ))}
                 </ul>
-              </nav>
+              </div>
             ) : null}
           </ul>
-        </nav>
+        </div>
         <section className={styles.cartaInfo}>
           {data[pagina.categoria].subcategoriasBool
             ? data[pagina.categoria].data[pagina.subcategoria].data.map(

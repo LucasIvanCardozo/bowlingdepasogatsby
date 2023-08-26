@@ -18,7 +18,7 @@ import Tarjeta from '../components/Tarjeta';
 import TarjetaAlbum from '../components/tarjetaAlbum';
 
 export default function Logros() {
-  const [width, setWidth] = useState();
+  const [width, setWidth] = useState(0);
   const [winners, setWinners] = useState([]);
   const [totalPeople, setTotalPeople] = useState([]);
   const [scoreboard, setScoreboard] = useState([]);
@@ -60,6 +60,9 @@ export default function Logros() {
   }, []);
 
   useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
     setWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
 
@@ -67,10 +70,6 @@ export default function Logros() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-  const handleResize = () => {
-    setWidth(window.innerWidth);
-  };
 
   useEffect(() => {
     for (let i = 0; i < 10; i++) {
