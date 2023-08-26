@@ -1,4 +1,4 @@
-.main_historia {
+.main {
   width: 100%;
   min-height: 15em;
   height: 100vw;
@@ -17,7 +17,7 @@
   margin-top: -5vh;
 }
 
-.main_container {
+.main > div {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +31,7 @@
   min-width: max-content;
 }
 
-.main_img {
+.main img {
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
@@ -40,7 +40,7 @@
   transform: translateX(-15em) rotate(-200deg) scale(.5);
 }
 
-.main_container[isvisible='true'] > .main_img {
+.main > div[isvisible='true'] > img {
   animation-name: ball;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -56,14 +56,14 @@
   }
 }
 
-.main_header {
+.main header {
   margin-left: -4.3;
   text-align: end;
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
-.main_header::before {
+.main header::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -78,7 +78,7 @@
   transform: translateX(-2em);
 }
 
-.main_header[isvisible='true']::before {
+.main header[isvisible='true']::before {
   animation-name: banner;
   animation-duration: 1s;
   animation-delay: 1s;
@@ -106,18 +106,18 @@
   }
 }
 
-.main_h1 {
+.main h1 {
   font-family: bebasNeue;
   font-size: 4.2em;
   margin-bottom: -0.3em;
 }
 
-.main_p {
+.main p {
   font-size: 1.8em;
   margin: 0;
 }
 
-.article_historia {
+.article {
   max-width: 750px;
   margin: auto;
   margin-bottom: 2em;
@@ -131,7 +131,12 @@
   justify-content: center;
 }
 
-.sections {
+.article > div {
+  width: 50px;
+  background-color: #555;
+}
+
+.sectionsList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,24 +147,19 @@
   gap: 3em;
 }
 
-.sections_svg {
+.sectionsList > section > img {
   height: 3.5em;
   width: 3.5em;
   padding: 0 0.5em;
 }
 
-.leftBar {
-  width: 50px;
-  background-color: #555;
-}
-
-.intro {
+.sectionsList > section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.intro_img {
+.sectionsList > section > div > img {
   aspect-ratio: 16/9;
   width: 100%;
   -o-object-fit: cover;
@@ -167,19 +167,19 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .main_historia {
+  .main {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .main_historia {
+  .main {
     font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .main_historia {
+  .main {
     font-size: 2.1rem;
   }
 }

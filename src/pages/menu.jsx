@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { useState } from 'react';
+import * as styles from '../styles/pages/menu.module.css';
 import ItemCarta from '../components/ItemCarta';
 import Marcas from '../components/Marcas';
-import '../styles/pages/menu.css';
-import useIntersection from '../useIntersection';
 import menuData from '../db/menuData.json';
+import useIntersection from '../useIntersection';
 
 export default function Menu() {
   const data = menuData.data;
@@ -34,54 +34,50 @@ export default function Menu() {
 
   return (
     <>
-      <main className="main_menu">
-        <div className="titulo">
-          <h1
-            className="titulo_h"
-            ref={elementRef}
-            isvisible={isVisible ? 'true' : 'false'}
-          >
+      <main className={styles.main}>
+        <div className={styles.titulo}>
+          <h1 ref={elementRef} isvisible={isVisible ? 'true' : 'false'}>
             MENÚ
           </h1>
-          <p className="titulo_descripcion">
+          <p>
             En nuestro Bowling ofrecemos una variedad de comidas y bebidas
             deliciosas para una experiencia completa.
           </p>
         </div>
       </main>
-      <article className="carta">
-        <div className="carta_categorias">
-          <ul className="carta_categoriasUl">
+      <article className={styles.carta}>
+        <nav className={styles.cartaNav}>
+          <ul>
             {data.map((data) => (
               <li
-                className="carta_categoriasLi"
+                className={styles.cartaCategorias}
                 key={data.name}
                 ref={data.id === 0 ? elementRef5 : null}
                 isvisible={isVisible5 && data.id === 0 ? 'true' : 'false'}
                 onClick={() => handleCategoria(categoria, data)}
                 open={pagina.categoria === data.id}
               >
-                <p className="carta_categoriasP">{data.name}</p>
+                <p>{data.name}</p>
               </li>
             ))}
             {data[categoria].subcategoriasBool ? (
-              <div className="carta_subcategorias">
-                <ul className="carta_subcategoriasUl">
+              <nav className={styles.subcategoriasNav}>
+                <ul>
                   {data[categoria].data.map((data) => (
                     <li
-                      className="carta_subcategoriasLi"
+                      className={styles.subcategorias}
                       key={data.name}
                       onClick={() => handleSubCategoria(categoria, data)}
                     >
-                      <p className="carta_subcategoriasP">{data.name}</p>
+                      <p>{data.name}</p>
                     </li>
                   ))}
                 </ul>
-              </div>
+              </nav>
             ) : null}
           </ul>
-        </div>
-        <section className="carta_info">
+        </nav>
+        <section className={styles.cartaInfo}>
           {data[pagina.categoria].subcategoriasBool
             ? data[pagina.categoria].data[pagina.subcategoria].data.map(
                 (data) => <ItemCarta key={data.name} data={data} />

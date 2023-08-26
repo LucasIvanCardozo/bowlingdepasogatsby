@@ -1,4 +1,4 @@
-.main_menu {
+.main{
   position: relative;
   display: flex;
   flex-direction: column;
@@ -17,13 +17,13 @@
   margin: 20px 0;
 }
 
-.titulo_h {
+.titulo > h1 {
   position: relative;
   font-family: bebasNeue;
   font-size: 10em;
 }
 
-.titulo_h::before {
+.titulo > h1::before {
   content: '';
   position: absolute;
   height: 80%;
@@ -37,15 +37,15 @@
   transition: transform 2s;
 }
 
-.titulo_h[isvisible='true']::before {
-  animation-name: bannerMenu;
+.titulo > h1[isvisible='true']::before {
+  animation-name: banner;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   transform: translateX(2.5em);
 }
 
-@keyframes bannerMenu {
+@keyframes banner {
   0% {
     opacity: 0;
   }
@@ -63,68 +63,13 @@
   }
 }
 
-.titulo_descripcion {
+.titulo > p {
   font-family: arialRounded;
   margin: 0;
   font-size: 1em;
   width: 70vw;
   max-width: 500px;
   text-align: center;
-}
-
-.stickers {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 60vw;
-  max-width: 800px;
-  height: 20vw;
-  max-height: 150px;
-}
-
-.sticker {
-  aspect-ratio: 10 / 10;
-  height: 100%;
-  margin: 0 2vw;
-  flex-grow: 1;
-  object-fit: contain;
-}
-
-.pizza[isvisible='true'] {
-  animation-name: sticker;
-  animation-duration: 0.5s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-}
-
-.cerveza[isvisible='true'] {
-  animation-name: sticker;
-  animation-duration: 0.5s;
-  animation-delay: 1.7s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-}
-
-.helado[isvisible='true'] {
-  animation-name: sticker;
-  animation-duration: 0.5s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-}
-
-@keyframes sticker {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
 .carta {
@@ -140,7 +85,7 @@
   background-color: #555;
 }
 
-.carta_categorias {
+.cartaNav {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -151,7 +96,7 @@
   border-radius: 2px;
 }
 
-.carta_categoriasUl {
+.cartaNav > ul {
   font-family: bebasNeue;
   position: relative;
   display: flex;
@@ -166,7 +111,7 @@
   z-index: 10;
 }
 
-.carta_categoriasLi {
+.cartaCategorias {
   color: #fff;
   box-sizing: border-box;
   border-left: 2px solid #aaa;
@@ -176,30 +121,35 @@
   height: 100%;
   transition: background-color 0.3s, box-shadow 0.3s, border-radius 0.3s;
 }
-.carta_categoriasLi:first-child {
+.cartaCategorias:first-child {
   border: none;
 }
 
-.carta_categoriasLi[open] {
+.cartaCategorias[open] {
   background-color: #d9d9d9;
   box-shadow: 0 0 1px 0.3px #0009;
 }
 
-.carta_categoriasLi[open] > .carta_categoriasP {
+.cartaCategorias > p {
+  margin: 0;
+  transition: color 0.3s, transform 0.1s;
+}
+
+.cartaCategorias[open] > p {
   color: #222222;
 }
 
-.carta_categoriasLi:hover {
+.cartaCategorias:hover {
   background-color: #eee;
   cursor: pointer;
   box-shadow: 0 0 10px 0px #2225;
 }
 
-.carta_categoriasLi:hover > .carta_categoriasP {
+.cartaCategorias:hover > p {
   color: #222222;
 }
 
-.carta_categoriasLi[isvisible='true'] {
+.cartaCategorias[isvisible='true'] {
   animation-name: categoria;
   animation-duration: 1s;
   animation-delay: 1s;
@@ -232,12 +182,7 @@
   }
 }
 
-.carta_categoriasP {
-  margin: 0;
-  transition: color 0.3s, transform 0.1s;
-}
-
-.carta_subcategorias {
+.subcategoriasNav {
   font-family: bebasNeue;
   background-color: #ddd;
   position: absolute;
@@ -250,7 +195,7 @@
   border-radius: 0 0 10px 10px;
 }
 
-.carta_subcategoriasUl {
+.subcategoriasNav > ul {
   letter-spacing: 0.02em;
   font-size: 0.9em;
   display: flex;
@@ -258,16 +203,16 @@
   margin: 0;
 }
 
-.carta_subcategoriasLi {
+.subcategorias {
   padding: 0 5px;
   cursor: pointer;
 }
 
-.carta_subcategoriasP {
+.subcategorias > p {
   margin: 0;
 }
 
-.carta_info {
+.cartaInfo {
   height: 100%;
   border-radius: 10px;
   width: 100%;
@@ -285,19 +230,19 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .carta_categoriasLi {
+  .cartaCategorias {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .carta_categoriasLi {
+  .cartaCategorias {
     font-size: 1.7rem;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .carta_categoriasLi {
+  .cartaCategorias {
     font-size: 1.9rem;
   }
 }

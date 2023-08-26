@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
+import * as styles from '../styles/pages/logros.module.css';
 import people from '../db/dbRecords.json';
-import '../styles/pages/logros.css';
 import useIntersection from '../useIntersection';
 import nube from '../assets/images/nube.webp';
 import wind from '../assets/images/viento.svg';
@@ -18,6 +18,7 @@ import Tarjeta from '../components/Tarjeta';
 import TarjetaAlbum from '../components/tarjetaAlbum';
 
 export default function Logros() {
+  const [width, setWidth] = useState();
   const [winners, setWinners] = useState([]);
   const [totalPeople, setTotalPeople] = useState([]);
   const [scoreboard, setScoreboard] = useState([]);
@@ -27,7 +28,6 @@ export default function Logros() {
   const [elementRef2, isVisible2] = useIntersection({
     treshold: 0,
   });
-  const [width, setWidth] = useState();
 
   useEffect(() => {
     const dateNow = Date.now();
@@ -90,26 +90,22 @@ export default function Logros() {
 
   return (
     <>
-      <main className="main_logros">
-        <div className="titulo">
-          <div className="titulo_hContenedor">
+      <main className={styles.main}>
+        <div className={styles.titulo}>
+          <div>
             <Confetis />
-            <h1
-              className="titulo_h"
-              ref={elementRef}
-              isvisible={isVisible ? 'true' : 'false'}
-            >
+            <h1 ref={elementRef} isvisible={isVisible ? 'true' : 'false'}>
               LOGROS
             </h1>
             <Confetis direction={true} />
           </div>
-          <p className="titulo_descripcion">Un buen jugador</p>
-          <p className="titulo_descripcion">merece ser recompenzado</p>
+          <p>Un buen jugador</p>
+          <p>merece ser recompenzado</p>
         </div>
       </main>
-      <article className="article_logros">
-        <div className="article_boxes">
-          <div className="article_boxes_score">
+      <article className={styles.article}>
+        <div className={styles.boxes}>
+          <div className={styles.boxesSide}>
             <Anotacion
               der={scoreboard[0] ? scoreboard[0].der : null}
               izq={scoreboard[0] ? scoreboard[0].izq : null}
@@ -140,7 +136,7 @@ export default function Logros() {
             />
           </div>
           <Anotacion special={true} />
-          <div className="article_boxes_score">
+          <div className={styles.boxesSide}>
             <Anotacion
               der={scoreboard[5] ? scoreboard[5].der : null}
               izq={scoreboard[5] ? scoreboard[5].izq : null}
@@ -171,61 +167,71 @@ export default function Logros() {
             />
           </div>
         </div>
-        <section className="section_100PalosContainer">
-          <img className="section_100Palos_flecha" src={flecha} alt="" />
-          <div className="section_100Palos">
-            <div className="section_100Palos_animation">
+        <section className={styles.pin100}>
+          <img className={styles.pin100Arrow} src={flecha} alt="" />
+          <div>
+            <div className={styles.pin100Animation}>
               <img
-                className="section_100Palos_wind"
+                className={styles.pin100Wind}
                 src={wind}
                 alt=""
                 ref={elementRef2}
                 isvisible={isVisible2 ? 'true' : 'false'}
               />
-              <div className="section_100Palos_ball">
+              <div className={styles.pin100Ball}>
                 <img
-                  className="section_100Palos_ballImg"
                   src={ball}
                   alt=""
                   isvisible={isVisible2 ? 'true' : 'false'}
                 />
                 <img
-                  className="section_100Palos_textImg"
                   src={text100}
                   alt=""
                   isvisible={isVisible2 ? 'true' : 'false'}
                 />
               </div>
-              <img className="section_100Palos_palos" src={palos100} alt="" />
+              <img className={styles.pin100Pins} src={palos100} alt="" />
             </div>
-            <img className="section_100Palos_vaso" src={vaso100Palos} alt="" />
+            <img className={styles.pin100Glass} src={vaso100Palos} alt="" />
           </div>
         </section>
-        <section className="section_130PalosContainer">
-          <img className="section_130Palos_palos" src={palos130} alt="" />
-          <div className="section_130Palos_ball">
-            <img className="section_130Palos_textImg" src={text130} alt="" />
-            <img className="section_130Palos_ballImg" src={ball} alt="" />
+        {/*  <section className={styles.pin130}>
+          <img
+            className={styles.section_130Palos_palos}
+            src={palos130}
+            alt=""
+          />
+          <div className={styles.section_130Palos_ball}>
+            <img
+              className={styles.section_130Palos_textImg}
+              src={text130}
+              alt=""
+            />
+            <img
+              className={styles.section_130Palos_ballImg}
+              src={ball}
+              alt=""
+            />
           </div>
-          <img className="section_130Palos_wind" src={wind} alt="" />
-          <div className="comingsoon">
-            <p className="comingsoon_text">
+          <img className={styles.section_130Palos_wind} src={wind} alt="" />
+          <div className={styles.comingsoon}>
+            <p className={styles.comingsoon_text}>
               <b>PROXIMAMENTE</b>
             </p>
           </div>
-        </section>
-        <article className="article_records">
-          <section className="section_records">
-            <div className="section_records_nube">
-              <img className="section_records_nubeImg" src={nube} alt="" />
-              <h2 className="section_records_title">
+        </section> */}
+        <article className={styles.records}>
+          <section className={styles.winners}>
+            <div className={styles.winnersImg}>
+              <img src={nube} alt="" />
+              <h2>
                 los cracks de <br />
                 {Intl.DateTimeFormat('es-ES', { month: 'long' }).format(
                   new Date() - 2592000000
                 )}
               </h2>
             </div>
-            <ul className="section_betters">
+            <ul>
               {winners.map(({ name, lastName, age, record }, index) => (
                 <Tarjeta
                   key={name}
@@ -239,9 +245,9 @@ export default function Logros() {
               ))}
             </ul>
           </section>
-          <section className="section_album">
-            <h2 className="section_album_title">grandes jugadores del mes</h2>
-            <ul className="section_album_ul">
+          <section className={styles.album}>
+            <h2>grandes jugadores del mes</h2>
+            <ul className={styles.section_album_ul}>
               {totalPeople.map(({ name, lastName, age, record }) => (
                 <TarjetaAlbum
                   key={name}

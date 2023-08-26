@@ -1,12 +1,12 @@
 import * as React from 'react';
-import useIntersection from '../useIntersection';
+import * as styles from '../styles/pages/index.module.css';
 import LogoTexto from '../components/logoTexto';
-import '../styles/pages/index.css';
 import estrellas from '../assets/images/estrellas.svg';
-import bolo from '../assets/images/boloBlanco.svg';
+import pin from '../assets/images/boloBlanco.svg';
 import imagen1 from '../assets/images/imagen1.webp';
 import imagen2 from '../assets/images/imagen2.webp';
 import imagen3 from '../assets/images/maquinita.webp';
+import useIntersection from '../useIntersection';
 
 const IndexPage = () => {
   const [elementRef, isVisible] = useIntersection({
@@ -27,14 +27,14 @@ const IndexPage = () => {
 
   return (
     <>
-      <main className="main_index">
+      <main className={styles.main}>
         <div
-          className="main_banner"
+          className={styles.banner}
           ref={elementRef4}
           isvisible={isVisible4 ? 'true' : 'false'}
         >
           <img
-            className="main_estrellas"
+            className={styles.estrellas}
             src={estrellas}
             alt="estrellas en webp"
             loading="lazy"
@@ -42,8 +42,8 @@ const IndexPage = () => {
           />
           <LogoTexto />
           <img
-            className="main_bolo"
-            src={bolo}
+            className={styles.pin}
+            src={pin}
             alt="bolo blanco"
             ref={elementRef5}
             isvisible={isVisible5 ? 'true' : 'false'}
@@ -51,48 +51,40 @@ const IndexPage = () => {
           />
         </div>
       </main>
-      <article className="article_index">
-        <section className="section_intro">
-          <div className="section_intro_text">
-            <p className="section_intro_text_p1">
-              Sabemos que lo importante es disfrutar de la compañía mutua.
-            </p>
-            <p className="section_intro_text_p2">
+      <article className={styles.article}>
+        <section className={styles.intro}>
+          <div className={styles.introText}>
+            <p>Sabemos que lo importante es disfrutar de la compañía mutua.</p>
+            <p>
               ¡Por eso es el lugar ideal para pasar un rato agradable todos
               juntos!
             </p>
           </div>
-          <div className="section_intro_time">
-            <div className="section_intro_time_days">
-              <p className="section_intro_time_p">abierto</p>
-              <p className="section_intro_time_p">todos los días!</p>
-              <p className="section_intro_time_p">de 17hs a 2:30hs</p>
+          <div className={styles.introTime}>
+            <div className={styles.introDays}>
+              <p>abierto</p>
+              <p>todos los días!</p>
+              <p>de 17hs a 2:30hs</p>
             </div>
-            <div className="section_intro_time_slash"></div>
-            <div className="section_intro_time_ubi">
-              <p className="section_intro_time_p">ubicación</p>
-              <p className="section_intro_time_p">córdoba</p>
-              <p className="section_intro_time_p">3766</p>
+            <div className={styles.introSlash}></div>
+            <div>
+              <p>ubicación</p>
+              <p>córdoba</p>
+              <p>3766</p>
             </div>
           </div>
         </section>
-
-        <section className="section_first">
-          <h2 className="section_first_titulo">nos&nbsp;mudamos!</h2>
-          <div className="section_first_datos">
+        <section className={styles.sectionFirst}>
+          <h2>nos&nbsp;mudamos!</h2>
+          <div className={styles.sectionFirstData}>
             <div
-              className="section_first_containerImg"
+              className={styles.sectionFirstImg}
               ref={elementRef}
               isvisible={isVisible ? 'true' : 'false'}
             >
-              <img
-                className="section_first_img"
-                src={imagen1}
-                alt="imagen del bowling"
-                loading="lazy"
-              />
+              <img src={imagen1} alt="imagen del bowling" loading="lazy" />
             </div>
-            <p className="section_first_p">
+            <p>
               ¡Tenemos <b>grandes noticias</b>! Nos mudamos a un nuevo lugar{' '}
               <b>espectacular</b>, más amplio y completamente renovado para
               brindarte una experiencia de entretenimiento <b>única</b>. Desde
@@ -104,22 +96,17 @@ const IndexPage = () => {
             </p>
           </div>
         </section>
-        <section className="section_second">
-          <h2 className="section_second_titulo">qué&nbsp;podemos ofrecerte?</h2>
-          <div className="section_second_datos">
+        <section className={styles.sectionSecond}>
+          <h2>qué&nbsp;podemos ofrecerte?</h2>
+          <div className={styles.sectionSecondData}>
             <div
-              className="section_second_containerImg"
+              className={styles.sectionSecondImg}
               ref={elementRef2}
               isvisible={isVisible2 ? 'true' : 'false'}
             >
-              <img
-                className="section_second_img"
-                src={imagen2}
-                alt="imagen del bowling"
-                loading="lazy"
-              />
+              <img src={imagen2} alt="imagen del bowling" loading="lazy" />
             </div>
-            <p className="section_second_p">
+            <p>
               ¡Vení a nuestro <b>bowling</b> y pasá un rato <b>inolvidable</b>!
               Podés festejar tu cumpleaños, ganar <b>líneas gratis</b> y
               disfrutar de diversión asegurada. Además, te ofrecemos una
@@ -130,23 +117,17 @@ const IndexPage = () => {
             </p>
           </div>
         </section>
-        <section className="section_third">
+        <section className={styles.sectionThird}>
           <div
-            className="section_third_containerImg"
+            className={styles.sectionThirdImg}
             ref={elementRef3}
             isvisible={isVisible3 ? 'true' : 'false'}
           >
-            <img
-              className="section_third_img"
-              src={imagen3}
-              alt="imagen del bowling"
-              loading="lazy"
-            />
+            <img src={imagen3} alt="imagen del bowling" loading="lazy" />
           </div>
-
-          <div className="section_third_datos">
-            <h2 className="section_third_titulo">diversión!</h2>{' '}
-            <p className="section_third_p">
+          <div>
+            <h2> diversión!</h2>{' '}
+            <p>
               ¡Sumérgete en una experiencia de entretenimiento completa en
               nuestro centro renovado! Aquí encontrarás una emocionante variedad
               de actividades para disfrutar al máximo. Además del fascinante{' '}

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as styles from '../styles/pages/historia.module.css';
 import boloMain from '../assets/images/pelotaHistoria.webp';
 import tijeras from '../assets/images/tijeras.webp';
 import confetis from '../assets/images/confetis.webp';
@@ -6,7 +7,6 @@ import circuloNegado from '../assets/images/circuloNegado.webp';
 import inauguracion from '../assets/images/inauguracion.webp';
 import cierre from '../assets/images/cierre.webp';
 import abrimos from '../assets/images/abrimos.webp';
-import '../styles/pages/historia.css';
 import useIntersection from '../useIntersection';
 
 export default function Historia() {
@@ -18,36 +18,27 @@ export default function Historia() {
   });
   return (
     <>
-      <main className="main_historia">
-        <div
-          className="main_container"
-          ref={elementRef}
-          isvisible={isVisible ? 'true' : 'false'}
-        >
+      <main className={styles.main}>
+        <div ref={elementRef} isvisible={isVisible ? 'true' : 'false'}>
           <img
             src={boloMain}
             alt="pelota de bowling con transparencia"
-            className="main_img"
             loading="lazy"
           />
-          <header
-            className="main_header"
-            ref={elementRef2}
-            isvisible={isVisible2 ? 'true' : 'false'}
-          >
-            <h1 className="main_h1">historia</h1>
-            <p className="main_p">de nuestro bowling</p>
+          <header ref={elementRef2} isvisible={isVisible2 ? 'true' : 'false'}>
+            <h1>historia</h1>
+            <p>de nuestro bowling</p>
           </header>
         </div>
       </main>
-      <article className="article_historia">
-        <div className="leftBar"></div>
-        <section className="sections">
-          <section className="intro">
-            <img className="sections_svg" src={tijeras} alt="" />
-            <div className="intro_data">
-              <h2 className="intro_title">14 de Septiembre 1988</h2>
-              <p className="intro_text">
+      <article className={styles.article}>
+        <div></div>
+        <section className={styles.sectionsList}>
+          <section>
+            <img src={tijeras} alt="" />
+            <div>
+              <h2>14 de Septiembre 1988</h2>
+              <p>
                 ¡El comienzo de una leyenda! En la emblemática Avenida{' '}
                 <b>Paso y Santa Fe</b>, dimos vida a nuestro querido{' '}
                 <b>bowling</b>. Aquel día, marcado en la historia, inauguramos
@@ -58,14 +49,14 @@ export default function Historia() {
                 nosotros y forma parte de nuestra historia en constante
                 crecimiento!
               </p>
-              <img className="intro_img" src={inauguracion} alt="" />
+              <img src={inauguracion} alt="" />
             </div>
           </section>
-          <section className="intro">
-            <img className="sections_svg" src={circuloNegado} alt="" />
-            <div className="intro_data">
-              <h2 className="intro_title">8 de Agosto 2022</h2>
-              <p className="intro_text">
+          <section>
+            <img src={circuloNegado} alt="" />
+            <div>
+              <h2>8 de Agosto 2022</h2>
+              <p>
                 <b>Cerramos temporalmente</b> nuestro querido bowling debido a
                 desafíos económicos, una decisión difícil y devastadora para
                 nuestro equipo y comunidad de jugadores. A pesar de ello,
@@ -74,14 +65,14 @@ export default function Historia() {
                 periodo difícil y esperamos recibirlos nuevamente para crear
                 momentos inolvidables juntos.
               </p>
-              <img className="intro_img" src={cierre} alt="" />
+              <img src={cierre} alt="" />
             </div>
           </section>
-          <section className="intro">
-            <img className="sections_svg" src={confetis} alt="" />
-            <div className="intro_data">
-              <h2 className="intro_title">10 de Marzo 2023</h2>
-              <p className="intro_text">
+          <section>
+            <img src={confetis} alt="" />
+            <div>
+              <h2>10 de Marzo 2023</h2>
+              <p>
                 ¡<b>Estamos de vuelta y en un lugar mejor!</b> Después de
                 superar desafíos económicos, hemos reabierto en{' '}
                 <b>Cordoba 2866</b>. Este nuevo espacio nos ofrece más
@@ -91,7 +82,7 @@ export default function Historia() {
                 establecimiento. ¡Los esperamos con entusiasmo en nuestro
                 emocionante nuevo lugar!
               </p>
-              <img className="intro_img" src={abrimos} alt="" />
+              <img src={abrimos} alt="" />
             </div>
           </section>
         </section>

@@ -1,4 +1,4 @@
-.main_logros {
+.main {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -17,18 +17,18 @@
   margin: 20px 0;
 }
 
-.titulo_hContenedor {
+.titulo > div {
   display: flex;
   position: relative;
 }
 
-.titulo_h {
+.titulo h1 {
   position: relative;
   font-family: bebasNeue;
   font-size: 7em;
 }
 
-.titulo_h::before {
+.titulo h1::before {
   content: '';
   position: absolute;
   height: 80%;
@@ -42,15 +42,15 @@
   transition: transform 2s;
 }
 
-.titulo_h[isvisible='true']::before {
-  animation-name: bannerLogros;
+.titulo h1[isvisible='true']::before {
+  animation-name: banner;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
   transform: translateX(1.8em);
 }
 
-@keyframes bannerLogros {
+@keyframes banner {
   0% {
     opacity: 0;
   }
@@ -68,7 +68,7 @@
   }
 }
 
-.titulo_descripcion {
+.titulo > p {
   font-family: arialRounded;
   margin: 0;
   font-size: 1em;
@@ -77,19 +77,19 @@
   text-align: center;
 }
 
-.article_logros {
+.article {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6em;
 }
 
-.article_boxes {
+.boxes {
   display: flex;
   align-items: center;
 }
 
-.article_boxes_score {
+.boxesSide {
   opacity: 0.7;
   display: grid;
   grid-template-rows: 9em;
@@ -100,7 +100,7 @@
   border-right: 0 solid #000;
 }
 
-.section_100PalosContainer {
+.pin100 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -109,24 +109,30 @@
   font-size: 0.6rem;
 }
 
-.section_100Palos {
+.pin100Arrow {
+  height: 5em;
+  align-self: center;
+  transform: scaleX(1);
+}
+
+.pin100 > div {
   display: flex;
   justify-content: space-around;
 }
 
-.section_100Palos_animation {
+.pin100Animation {
   display: flex;
   align-items: flex-end;
 }
 
-.section_100Palos_wind {
+.pin100Wind {
   height: 3em;
   width: 3em;
   object-fit: contain;
   opacity: 0.4;
 }
 
-.section_100Palos_wind[isvisible='true'] {
+.pin100Wind[isvisible='true'] {
   animation-name: wind;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
@@ -140,7 +146,7 @@
   }
 }
 
-.section_100Palos_ball {
+.pin100Ball {
   position: relative;
   height: 10em;
   width: 10em;
@@ -148,27 +154,27 @@
   margin-right: -2.5em;
 }
 
-.section_100Palos_ballImg {
+.pin100Ball > img:first-child {
   height: 100%;
   width: 100%;
   object-fit: contain;
   transform: translateX(-1.5em);
 }
 
-.section_100Palos_ballImg[isvisible='true'] {
-  animation-name: ballLogros;
+.pin100Ball > img:first-child[isvisible='true'] {
+  animation-name: ball100;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes ballLogros {
+@keyframes ball100 {
   to {
     transform: translateX(0em) rotate(1080deg);
   }
 }
 
-.section_100Palos_textImg {
+.pin100Ball > img:last-child {
   position: absolute;
   top: 10%;
   left: 10%;
@@ -178,35 +184,30 @@
   opacity: 0;
 }
 
-.section_100Palos_textImg[isvisible='true'] {
-  animation-name: text;
+.pin100Ball > img:last-child[isvisible='true'] {
+  animation-name: text100;
   animation-duration: 0.8s;
   animation-delay: 1.2s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes text {
+@keyframes text100 {
   to {
     opacity: 1;
   }
 }
 
-.section_100Palos_palos {
+.pin100Pins {
   height: 8.5em;
   aspect-ratio: 26/25;
 }
 
-.section_100Palos_flecha {
-  height: 5em;
-  transform: scaleX(1);
-}
-
-.section_100Palos_vaso {
+.pin100Glass {
   height: 10em;
 }
 
-.section_130PalosContainer {
+/* .pin130 {
   position: relative;
   display: flex;
   width: 85%;
@@ -270,29 +271,22 @@
 .section_130Palos_palos {
   height: 16em;
   aspect-ratio: 26/25;
-}
+} */
 
-.article_records {
+.records {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.section_records {
+.winners {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 1rem;
 }
 
-.section_betters {
-  display: flex;
-  width: 90%;
-  align-items: center;
-  gap: 3vw;
-}
-
-.section_records_nube {
+.winnersImg {
   position: relative;
   aspect-ratio: 16/7;
   width: 80%;
@@ -301,7 +295,7 @@
   align-items: center;
 }
 
-.section_records_nubeImg {
+.winnersImg > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -312,18 +306,25 @@
   filter: drop-shadow(1px 1px 2px #000);
 }
 
-.section_records_title {
+.winnersImg>h2 {
   margin-top: 0.6em;
   font-family: bebasNeue;
   font-size: 1.9em;
   text-align: center;
 }
 
-.section_album {
+.winners > ul {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  gap: 3vw;
+}
+
+.album {
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  padding: .5em;
+  padding: 0.5em;
   width: 75%;
   max-width: 650px;
   font-family: bebasNeue;
@@ -331,90 +332,84 @@
   margin-bottom: 3em;
 }
 
-.section_album_title {
+.album > h2 {
   font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   color: #c3c3c3;
 }
 
-.section_album_ul {
+.album > ul {
   display: grid;
-  gap: .5em;
-  margin: .5em 0;
+  gap: 0.5em;
+  margin: 0.5em 0;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-flow: row
+  grid-auto-flow: row;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .titulo_h {
+  .titulo h1 {
     font-size: 7em;
   }
-  .section_100PalosContainer {
+  .pin100 {
+    width: 27rem;
     font-size: 0.75em;
   }
-  .section_130PalosContainer {
+  /* .pin130 {
     font-size: 0.75rem;
-  }
-  .article_boxes {
+  } */
+  .boxes {
     font-size: 1.2rem;
   }
-  .section_100PalosContainer {
-    width: 27rem;
-  }
-  .section_records {
+  .winners {
     font-size: 1.2em;
   }
-    .section_album {
-      font-size: 1.1em;
-    }
+  .album {
+    font-size: 1.1em;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .titulo_h {
+  .titulo h1 {
     font-size: 8em;
   }
-  .section_100PalosContainer {
+  .pin100 {
+    width: 36rem;
     font-size: 0.9rem;
   }
-  .section_130PalosContainer {
+  /*  .pin130 {
     font-size: 0.9rem;
-  }
-  .article_boxes {
+  } */
+  .boxes {
     font-size: 1.5rem;
   }
-  .section_100PalosContainer {
-    width: 36rem;
-  }
-  .section_records {
+  .winners {
     font-size: 1.3em;
   }
-    .section_album {
-      font-size: 1.2em;
-    }
+  .album {
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (min-width: 1025px) {
-  .titulo_h {
+  .titulo h1 {
     font-size: 9em;
   }
-  .section_100PalosContainer {
+  .pin100 {
+    width: 50rem;
     font-size: 1em;
   }
-  .section_130PalosContainer {
+  /* .pin130 {
     font-size: 1rem;
-  }
-  .article_boxes {
+  } */
+  .boxes {
     font-size: 2.1rem;
   }
-  .section_100PalosContainer {
-    width: 50rem;
-  }
-  .section_records {
+  .winners {
     font-size: 1.5em;
   }
-     .section_album {
-       font-size: 1.3em;
-     }
+  .album {
+    font-size: 1.3em;
+  }
 }
