@@ -2,12 +2,14 @@
   font-family: bebasNeue;
   src: local('bebasNeue'),
     url(../assets/fonts/BebasNeue-Regular.woff2) format('woff2');
+  font-display: swap;
 }
 
 @font-face {
   font-family: arialRounded;
   src: local('arialRounded'),
     url(../assets/fonts/Arial-Rounded-MT-Std.woff2) format('woff2');
+  font-display: swap;
 }
 
 html {

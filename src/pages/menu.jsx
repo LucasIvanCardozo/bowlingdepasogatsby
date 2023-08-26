@@ -94,6 +94,7 @@ export default function Menu() {
 
 export const Head = () => (
   <>
+    <html lang="es" />
     <title>Bowling de Paso - Menu</title>
     <meta name="description" content="Carta de comidas, busca tu favorita!" />
     <meta charSet="utf-8" />

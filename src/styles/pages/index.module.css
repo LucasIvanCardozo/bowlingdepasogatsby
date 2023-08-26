@@ -276,7 +276,7 @@
   opacity: 1;
 }
 
-.sectionFirstImg > img {
+.sectionFirstImg img {
   display: block;
   height: 100%;
   width: 100%;
@@ -353,7 +353,7 @@
   opacity: 1;
 }
 
-.sectionSecondImg > img {
+.sectionSecondImg img {
   display: block;
   height: 100%;
   width: 100%;
@@ -406,7 +406,7 @@
   transform: translateX(0);
   opacity: 1;
 }
-.sectionThirdImg > img {
+.sectionThirdImg img {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;

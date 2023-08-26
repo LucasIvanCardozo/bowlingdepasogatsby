@@ -93,6 +93,7 @@ export default function Historia() {
 
 export const Head = () => (
   <>
+    <html lang="es" />
     <title>Bowling de Paso - Historia</title>
     <meta name="description" content="Carta de comidas, busca tu favorita!" />
     <meta charSet="utf-8" />

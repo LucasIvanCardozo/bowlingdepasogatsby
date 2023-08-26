@@ -247,7 +247,7 @@ export default function Logros() {
           </section>
           <section className={styles.album}>
             <h2>grandes jugadores del mes</h2>
-            <ul className={styles.section_album_ul}>
+            <ul>
               {totalPeople.map(({ name, lastName, age, record }) => (
                 <TarjetaAlbum
                   key={name}
@@ -268,6 +268,7 @@ export default function Logros() {
 
 export const Head = () => (
   <>
+    <html lang="es" />
     <title>Bowling de Paso - Premios</title>
     <meta name="description" content="Entregamos premios al mejor!" />
     <meta charSet="utf-8" />

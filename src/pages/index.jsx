@@ -3,10 +3,11 @@ import * as styles from '../styles/pages/index.module.css';
 import LogoTexto from '../components/logoTexto';
 import estrellas from '../assets/images/estrellas.svg';
 import pin from '../assets/images/boloBlanco.svg';
-import imagen1 from '../assets/images/imagen1.webp';
-import imagen2 from '../assets/images/imagen2.webp';
-import imagen3 from '../assets/images/maquinita.webp';
+/* import imagen1 from '../assets/images/imagen1.webp'; */
+/* import imagen2 from '../assets/images/imagen2.webp'; */
+/* import imagen3 from '../assets/images/maquinita.webp'; */
 import useIntersection from '../useIntersection';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
   const [elementRef, isVisible] = useIntersection({
@@ -82,7 +83,11 @@ const IndexPage = () => {
               ref={elementRef}
               isvisible={isVisible ? 'true' : 'false'}
             >
-              <img src={imagen1} alt="imagen del bowling" loading="lazy" />
+              <StaticImage
+                src="../assets/images/imagen1.webp"
+                alt="imagen del bowling"
+                loading="lazy"
+              />
             </div>
             <p>
               ¡Tenemos <b>grandes noticias</b>! Nos mudamos a un nuevo lugar{' '}
@@ -104,7 +109,11 @@ const IndexPage = () => {
               ref={elementRef2}
               isvisible={isVisible2 ? 'true' : 'false'}
             >
-              <img src={imagen2} alt="imagen del bowling" loading="lazy" />
+              <StaticImage
+                src="../assets/images/imagen2.webp"
+                alt="imagen del bowling"
+                loading="lazy"
+              />
             </div>
             <p>
               ¡Vení a nuestro <b>bowling</b> y pasá un rato <b>inolvidable</b>!
@@ -123,7 +132,11 @@ const IndexPage = () => {
             ref={elementRef3}
             isvisible={isVisible3 ? 'true' : 'false'}
           >
-            <img src={imagen3} alt="imagen del bowling" loading="lazy" />
+            <StaticImage
+              src="../assets/images/maquinita.webp"
+              alt="imagen del bowling"
+              loading="lazy"
+            />
           </div>
           <div>
             <h2> diversión!</h2>{' '}
@@ -146,6 +159,7 @@ export default IndexPage;
 
 export const Head = () => (
   <>
+    <html lang="es" />
     <title>Bowling de Paso - Inicio</title>
     <meta
       name="description"
