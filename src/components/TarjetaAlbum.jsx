@@ -15,7 +15,7 @@ export default function TarjetaAlbum({ name, lastName, age, img, record }) {
           <div className={styles.record}>
             <p>{record}</p>
             <div className={styles.pin}>
-              <img src={bolo} alt="" />
+              <img src={bolo} alt="" loading="lazy" />
             </div>
           </div>
         </div>

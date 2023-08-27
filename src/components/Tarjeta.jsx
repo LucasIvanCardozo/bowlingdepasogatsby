@@ -30,6 +30,7 @@ export default function Tarjeta({ name, lastName, age, img, record, pos }) {
         src={medals[pos - 1]}
         alt=""
         verinfo={verInfo ? 'true' : undefined}
+        loading="lazy"
       />
       <div className={styles.front} verinfo={verInfo ? 'true' : undefined}>
         <img src={img} loading="lazy" alt={`Imagen de ${name}`} />

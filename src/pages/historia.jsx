@@ -4,10 +4,8 @@ import boloMain from '../assets/images/pelotaHistoria.webp';
 import tijeras from '../assets/images/tijeras.webp';
 import confetis from '../assets/images/confetis.webp';
 import circuloNegado from '../assets/images/circuloNegado.webp';
-import inauguracion from '../assets/images/inauguracion.webp';
-import cierre from '../assets/images/cierre.webp';
-import abrimos from '../assets/images/abrimos.webp';
 import useIntersection from '../useIntersection';
+import { StaticImage } from 'gatsby-plugin-image';
 
 export default function Historia() {
   const [elementRef, isVisible] = useIntersection({
@@ -33,9 +31,9 @@ export default function Historia() {
       </main>
       <article className={styles.article}>
         <div></div>
-        <div className={styles.sectionsList}>
+        <section className={styles.sectionsList}>
           <section>
-            <img src={tijeras} alt="" />
+            <img src={tijeras} alt="" loading="lazy" />
             <div>
               <h2>14 de Septiembre 1988</h2>
               <p>
@@ -49,11 +47,15 @@ export default function Historia() {
                 nosotros y forma parte de nuestra historia en constante
                 crecimiento!
               </p>
-              <img src={inauguracion} alt="" />
+              <StaticImage
+                src="../assets/images/inauguracion.webp"
+                alt=""
+                loading="lazy"
+              />
             </div>
           </section>
           <section>
-            <img src={circuloNegado} alt="" />
+            <img src={circuloNegado} alt="" loading="lazy" />
             <div>
               <h2>8 de Agosto 2022</h2>
               <p>
@@ -65,11 +67,15 @@ export default function Historia() {
                 periodo difícil y esperamos recibirlos nuevamente para crear
                 momentos inolvidables juntos.
               </p>
-              <img src={cierre} alt="" />
+              <StaticImage
+                src="../assets/images/cierre.webp"
+                alt=""
+                loading="lazy"
+              />
             </div>
           </section>
           <section>
-            <img src={confetis} alt="" />
+            <img src={confetis} alt="" loading="lazy" />
             <div>
               <h2>10 de Marzo 2023</h2>
               <p>
@@ -82,10 +88,14 @@ export default function Historia() {
                 establecimiento. ¡Los esperamos con entusiasmo en nuestro
                 emocionante nuevo lugar!
               </p>
-              <img src={abrimos} alt="" />
+              <StaticImage
+                src="../assets/images/abrimos.webp"
+                alt=""
+                loading="lazy"
+              />
             </div>
           </section>
-        </div>
+        </section>
       </article>
     </>
   );

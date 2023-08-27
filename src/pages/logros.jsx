@@ -167,7 +167,12 @@ export default function Logros() {
           </div>
         </div>
         <section className={styles.pin100}>
-          <img className={styles.pin100Arrow} src={flecha} alt="" />
+          <img
+            className={styles.pin100Arrow}
+            src={flecha}
+            alt=""
+            loading="lazy"
+          />
           <div>
             <div className={styles.pin100Animation}>
               <img
@@ -176,22 +181,35 @@ export default function Logros() {
                 alt=""
                 ref={elementRef2}
                 isvisible={isVisible2 ? 'true' : 'false'}
+                loading="lazy"
               />
               <div className={styles.pin100Ball}>
                 <img
                   src={ball}
                   alt=""
                   isvisible={isVisible2 ? 'true' : 'false'}
+                  loading="lazy"
                 />
                 <img
                   src={text100}
                   alt=""
                   isvisible={isVisible2 ? 'true' : 'false'}
+                  loading="lazy"
                 />
               </div>
-              <img className={styles.pin100Pins} src={palos100} alt="" />
+              <img
+                className={styles.pin100Pins}
+                src={palos100}
+                alt=""
+                loading="lazy"
+              />
             </div>
-            <img className={styles.pin100Glass} src={vaso100Palos} alt="" />
+            <img
+              className={styles.pin100Glass}
+              src={vaso100Palos}
+              alt=""
+              loading="lazy"
+            />
           </div>
         </section>
         {/*  <section className={styles.pin130}>
@@ -222,7 +240,7 @@ export default function Logros() {
         <article className={styles.records}>
           <section className={styles.winners}>
             <div className={styles.winnersImg}>
-              <img src={nube} alt="" />
+              <img src={nube} alt="" loading="lazy" />
               <h2>
                 los cracks de <br />
                 {Intl.DateTimeFormat('es-ES', { month: 'long' }).format(

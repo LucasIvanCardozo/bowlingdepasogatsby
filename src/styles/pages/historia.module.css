@@ -159,7 +159,7 @@
   display: flex;
 }
 
-.sectionsList > section > div > img {
+.sectionsList > section > div img {
   aspect-ratio: 16/9;
   width: 100%;
   -o-object-fit: cover;
