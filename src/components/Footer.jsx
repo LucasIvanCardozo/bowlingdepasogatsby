@@ -6,7 +6,7 @@ import facebook from '../assets/images/facebookLogo.webp';
 
 export default function Footer() {
   return (
-    <footer className={styles.container}>
+    <div className={styles.container}>
       <div className={styles.socialText}>
         <p>
           No dudes en escribirnos, ¡resolveremos{' '}
@@ -81,6 +81,6 @@ export default function Footer() {
           </b>
         </p>
       </div>
-    </footer>
+    </div>
   );
 }
