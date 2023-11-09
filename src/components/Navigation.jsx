@@ -9,6 +9,8 @@ export default function Navigation() {
   const [width, setWidth] = useState(0);
   const [selected, setSelected] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [waitTransition, setWaitTransition] = useState(false);
+  const [menuDisplay, setMenuDisplay] = useState('0');
   const [elementRef, isVisible] = useIntersection({
     tresholfd: 0,
   });
@@ -40,10 +42,24 @@ export default function Navigation() {
 
   const handleMenu = () => {
     if (menuOpen) {
-      setMenuOpen(!menuOpen);
+      handleButton();
     }
   };
-
+  //manejador del boton de hamburguesa
+  const handleButton = () => {
+    if (!waitTransition) {
+      setWaitTransition(true);
+      if (menuOpen) {
+        setTimeout(() => {
+          setMenuDisplay('0');
+        }, 300);
+      } else {
+        setMenuDisplay('auto');
+      }
+      setMenuOpen(!menuOpen);
+      setTimeout(() => setWaitTransition(false), 300);
+    }
+  };
   return (
     <nav
       className={styles.container}
@@ -62,13 +78,16 @@ export default function Navigation() {
         className={styles.button}
         aria-label="boton del menú"
         open={menuOpen}
-        onClick={() => setMenuOpen(!menuOpen)}
+        onClick={() => handleButton()}
       >
         <span className={styles.span}></span>
         <span className={styles.span}></span>
         <span className={styles.span}></span>
       </button>
-      <ul open={menuOpen}>
+      <ul
+        {...(menuOpen ? {} : { style: { width: menuDisplay } })}
+        open={menuOpen}
+      >
         <li
           className={selected === 1 ? styles.selected : ''}
           onClick={() => handleNav(1)}

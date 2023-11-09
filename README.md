@@ -16,12 +16,8 @@ El objetivo de esta página web es proporcionar a los visitantes del Bowling de 
 
 - **React JS**: La página web se ha desarrollado utilizando React JS, lo que permite una estructura modular y un flujo de trabajo eficiente en el desarrollo de interfaces de usuario.
 
-## Licencia
-
-Este proyecto se distribuye bajo la Licencia MIT. Para obtener más información, consulta el archivo [LICENSE](LICENSE) del repositorio.
-
 ## Contacto
 
-Si tienes alguna pregunta o comentario sobre este proyecto, no dudes en ponerte en contacto con nosotros. Tu feedback es muy valioso para nosotros.
+Si tienes alguna pregunta o comentario sobre este proyecto, no dudes en ponerte en contacto conmigo. Tu feedback es muy valioso para nosotros.
 
 ¡Esperamos que disfrutes utilizando la página web del Bowling de Mar del Plata! ¡Gracias por tu interés!

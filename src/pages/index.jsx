@@ -8,6 +8,8 @@ import pin from '../assets/images/boloBlanco.svg';
 /* import imagen3 from '../assets/images/maquinita.webp'; */
 import useIntersection from '../useIntersection';
 import { StaticImage } from 'gatsby-plugin-image';
+import bebasNeue from '../assets/fonts/BebasNeue-Regular.woff2';
+import arialRounded from '../assets/fonts/Arial-Rounded-MT-Std.woff2';
 
 const IndexPage = () => {
   const [elementRef, isVisible] = useIntersection({
@@ -160,15 +162,34 @@ export default IndexPage;
 export const Head = () => (
   <>
     <html lang="es" />
-    <title>Bowling de Paso - Inicio</title>
+    <title>Bowling de Paso</title>
     <meta
       name="description"
-      content="Bienvenidos a la pagina principal de 'Bowling de Paso'!"
+      content="¡Divertite al máximo en nuestro moderno bowling de Mar del Plata! Ven a Cordoba 3766 y disfrutá de emocionantes partidas de bolos y deliciosos aperitivos. Nuestro centro de entretenimiento ofrece diversión para todas las edades. ¡Uníte a la diversión de los bolos en el corazón de Mar del Plata!"
     />
     <meta charSet="utf-8" />
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1, minimum-scale=1"
     />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Spanish" />
+    <meta name="author" content="Lucas Iván Cardozo" />
+    <link rel="canonical" href="http://bowlingdepaso.com" />
+    <link rel="icon" href="/favicon.ico" type="image/ico"></link>
+    <link
+      rel="preload"
+      href={bebasNeue}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    ></link>
+    <link
+      rel="preload"
+      href={arialRounded}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    ></link>
   </>
 );

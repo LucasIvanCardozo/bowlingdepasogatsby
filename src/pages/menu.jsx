@@ -5,6 +5,8 @@ import ItemCarta from '../components/ItemCarta';
 import Marcas from '../components/Marcas';
 import menuData from '../db/menuData.json';
 import useIntersection from '../useIntersection';
+import bebasNeue from '../assets/fonts/BebasNeue-Regular.woff2';
+import arialRounded from '../assets/fonts/Arial-Rounded-MT-Std.woff2';
 
 export default function Menu() {
   const data = menuData.data;
@@ -96,11 +98,31 @@ export const Head = () => (
   <>
     <html lang="es" />
     <title>Bowling de Paso - Menu</title>
-    <meta name="description" content="Carta de comidas, busca tu favorita!" />
+    <meta
+      name="description"
+      content="Explora nuestra deliciosa y variada carta en Bowling de Paso, Mar del Plata. Desde tentadoras comidas hasta refrescantes bebidas e increibles postres, nuestra selección está diseñada para satisfacer todos los gustos. Descubre una amplia gama de opciones cuidadosamente preparadas para acompañar tus partidas de bolos y hacer que tu experiencia sea aún más especial. Ya sea que estés buscando un aperitivo rápido o una comida completa, encontrarás opciones deliciosas que harán que tu visita sea memorable."
+    />
     <meta charSet="utf-8" />
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1, minimum-scale=1"
     />
+    <meta name="language" content="Spanish" />
+    <meta name="author" content="Lucas Iván Cardozo" />
+    <link rel="icon" href="/favicon.ico" type="image/ico"></link>
+    <link
+      rel="preload"
+      href={bebasNeue}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    ></link>
+    <link
+      rel="preload"
+      href={arialRounded}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    ></link>
   </>
 );

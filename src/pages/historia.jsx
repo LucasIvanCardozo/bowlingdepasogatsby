@@ -6,6 +6,8 @@ import confetis from '../assets/images/confetis.webp';
 import circuloNegado from '../assets/images/circuloNegado.webp';
 import useIntersection from '../useIntersection';
 import { StaticImage } from 'gatsby-plugin-image';
+import bebasNeue from '../assets/fonts/BebasNeue-Regular.woff2';
+import arialRounded from '../assets/fonts/Arial-Rounded-MT-Std.woff2';
 
 export default function Historia() {
   const [elementRef, isVisible] = useIntersection({
@@ -105,11 +107,32 @@ export const Head = () => (
   <>
     <html lang="es" />
     <title>Bowling de Paso - Historia</title>
-    <meta name="description" content="Carta de comidas, busca tu favorita!" />
+    <meta
+      name="description"
+      content="Descubre la apasionante trayectoria de Bowling de Paso: tu destino de entretenimiento en Mar del Plata. Desde nuestros humildes inicios en Cordoba 3766, hemos evolucionado hasta convertirnos en el epicentro del entretenimiento con bolos en la ciudad. Acompáñanos en un recorrido a través de los años, explorando los momentos emblemáticos, las mejoras en nuestras instalaciones y la dedicación constante para brindarte una experiencia de bolos inigualable. ¡Únete a nosotros y forma parte de la historia de Bowling de Paso mientras creamos recuerdos y diversión para la comunidad marplatense!"
+    />
+
     <meta charSet="utf-8" />
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1, minimum-scale=1"
     />
+    <meta name="language" content="Spanish" />
+    <meta name="author" content="Lucas Iván Cardozo" />
+    <link rel="icon" href="/favicon.ico" type="image/ico"></link>
+    <link
+      rel="preload"
+      href={bebasNeue}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    ></link>
+    <link
+      rel="preload"
+      href={arialRounded}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    ></link>
   </>
 );

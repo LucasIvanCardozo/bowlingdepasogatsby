@@ -16,6 +16,8 @@ import Confetis from '../components/confetis';
 import Anotacion from '../components/anotacion';
 import Tarjeta from '../components/Tarjeta';
 import TarjetaAlbum from '../components/tarjetaAlbum';
+import bebasNeue from '../assets/fonts/BebasNeue-Regular.woff2';
+import arialRounded from '../assets/fonts/Arial-Rounded-MT-Std.woff2';
 
 export default function Logros() {
   const [width, setWidth] = useState(0);
@@ -32,10 +34,11 @@ export default function Logros() {
   useEffect(() => {
     const dateNow = Date.now();
     const lastMonth = people
-      .filter((person) => {
+      // esto se quita para evitar que filtre los datos en los del ultimo mes
+      /*.filter((person) => {
         const dateParse = Date.parse(person.date);
         return dateNow - dateParse < 2592000000 && dateNow - dateParse > 0;
-      })
+      })*/
       .sort((a, b) => (a.record > b.record ? -1 : 1))
       .reduce((acc, item) => {
         const repeated = acc.filter(
@@ -287,11 +290,32 @@ export const Head = () => (
   <>
     <html lang="es" />
     <title>Bowling de Paso - Premios</title>
-    <meta name="description" content="Entregamos premios al mejor!" />
+    <meta
+      name="description"
+      content="Descubre el emocionante mundo de recompensas y logros en Bowling de Paso, Mar del Plata. Celebra tus éxitos en el bowling con nuestros increíbles premios por puntos acumulados. Reconocemos tus logros de manera única!. Además, sumérgete en nuestro álbum de fotos mensual que destaca a los campeones del último mes. Explora las caras de satisfacción y los momentos de gloria capturados en imágenes mientras te inspiras para alcanzar la grandeza en nuestras pistas. Únete a la comunidad de ganadores en Bowling de Paso y sé parte de nuestros destacados y memorables hitos."
+    />
+
     <meta charSet="utf-8" />
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1, minimum-scale=1"
     />
+    <meta name="language" content="Spanish" />
+    <meta name="author" content="Lucas Iván Cardozo" />
+    <link rel="icon" href="/favicon.ico" type="image/ico"></link>
+    <link
+      rel="preload"
+      href={bebasNeue}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    ></link>
+    <link
+      rel="preload"
+      href={arialRounded}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    ></link>
   </>
 );

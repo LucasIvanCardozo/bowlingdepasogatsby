@@ -16,7 +16,7 @@ export default function ItemCarta({ data }) {
                 </p>
               </div>
               <p className={styles.productPrice}>
-                ${data.price ? data.price : 'NULL'}
+                ${data.price ? data.price : ''}
               </p>
             </div>
             {data.description ? (
