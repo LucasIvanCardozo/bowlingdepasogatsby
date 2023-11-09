@@ -85,7 +85,11 @@ export default function Navigation() {
         <span className={styles.span}></span>
       </button>
       <ul
-        {...(menuOpen ? {} : { style: { width: menuDisplay } })}
+        {...(width <= 720
+          ? menuOpen
+            ? {}
+            : { style: { width: menuDisplay } }
+          : {})}
         open={menuOpen}
       >
         <li
