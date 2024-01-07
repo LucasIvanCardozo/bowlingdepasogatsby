@@ -35,7 +35,7 @@ export default function Historia() {
         <div></div>
         <section className={styles.sectionsList}>
           <section>
-            <img src={tijeras} alt="" loading="lazy" />
+            <img src={tijeras} alt="Tijeras" loading="lazy" />
             <div>
               <h2>14 de Septiembre 1988</h2>
               <p>
@@ -57,7 +57,11 @@ export default function Historia() {
             </div>
           </section>
           <section>
-            <img src={circuloNegado} alt="" loading="lazy" />
+            <img
+              src={circuloNegado}
+              alt="Señal que indica prohibición"
+              loading="lazy"
+            />
             <div>
               <h2>8 de Agosto 2022</h2>
               <p>
@@ -77,7 +81,7 @@ export default function Historia() {
             </div>
           </section>
           <section>
-            <img src={confetis} alt="" loading="lazy" />
+            <img src={confetis} alt="Confetis" loading="lazy" />
             <div>
               <h2>10 de Marzo 2023</h2>
               <p>

@@ -33,7 +33,12 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <img className={styles.img} src={instagram} alt="" loading="lazy" />
+            <img
+              className={styles.img}
+              src={instagram}
+              alt="Logo de Instagram"
+              loading="lazy"
+            />
           </a>
         </li>
         <li className={styles.li}>
@@ -42,7 +47,12 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <img className={styles.img} src={facebook} alt="" loading="lazy" />
+            <img
+              className={styles.img}
+              src={facebook}
+              alt="Logo de Facebook"
+              loading="lazy"
+            />
           </a>
         </li>
         <li className={styles.li}>
@@ -51,7 +61,12 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <img className={styles.img} src={whatsapp} alt="" loading="lazy" />
+            <img
+              className={styles.img}
+              src={whatsapp}
+              alt="Logo de whatsapp"
+              loading="lazy"
+            />
           </a>
         </li>
       </ul>

@@ -5,7 +5,7 @@ import bolo from '../assets/images/boloBlanco.svg';
 export default function TarjetaAlbum({ name, lastName, age, img, record }) {
   return (
     <li className={styles.container}>
-      <img src={img} alt="" loading="lazy" />
+      <img src={img} alt={`Imagen de ${name} ${lastName}`} loading="lazy" />
       <div className={styles.personData}>
         <p>
           {name} {lastName}
@@ -15,7 +15,7 @@ export default function TarjetaAlbum({ name, lastName, age, img, record }) {
           <div className={styles.record}>
             <p>{record}</p>
             <div className={styles.pin}>
-              <img src={bolo} alt="" loading="lazy" />
+              <img src={bolo} alt="Bolo" loading="lazy" />
             </div>
           </div>
         </div>

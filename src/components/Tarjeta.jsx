@@ -28,7 +28,7 @@ export default function Tarjeta({ name, lastName, age, img, record, pos }) {
       <img
         className={styles.medal}
         src={medals[pos - 1]}
-        alt=""
+        alt="Medalla"
         verinfo={verInfo ? 'true' : undefined}
         loading="lazy"
       />
@@ -46,7 +46,7 @@ export default function Tarjeta({ name, lastName, age, img, record, pos }) {
           <p className={styles.personAge}>{age} años</p>
         </div>
         <div className={styles.personRecord}>
-          <img src={bolo} alt="" loading="lazy" />
+          <img src={bolo} alt="Bolo" loading="lazy" />
           <p>{record}</p>
         </div>
       </div>

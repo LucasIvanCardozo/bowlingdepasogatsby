@@ -12,7 +12,7 @@ import vaso100Palos from '../assets/images/vaso100Palos.webp';
 import palos130 from '../assets/images/130Palos.svg';
 import text130 from '../assets/images/130PalosTexto.svg';
 import flecha from '../assets/images/flecha.svg';
-import Confetis from '../components/confetis';
+import Confetis from '../components/Confetis';
 import Anotacion from '../components/anotacion';
 import Tarjeta from '../components/Tarjeta';
 import TarjetaAlbum from '../components/tarjetaAlbum';
@@ -173,7 +173,7 @@ export default function Logros() {
           <img
             className={styles.pin100Arrow}
             src={flecha}
-            alt=""
+            alt="Flecha curva"
             loading="lazy"
           />
           <div>
@@ -181,7 +181,7 @@ export default function Logros() {
               <img
                 className={styles.pin100Wind}
                 src={wind}
-                alt=""
+                alt="Viento"
                 ref={elementRef2}
                 isvisible={isVisible2 ? 'true' : 'false'}
                 loading="lazy"
@@ -189,13 +189,13 @@ export default function Logros() {
               <div className={styles.pin100Ball}>
                 <img
                   src={ball}
-                  alt=""
+                  alt="Pelota"
                   isvisible={isVisible2 ? 'true' : 'false'}
                   loading="lazy"
                 />
                 <img
                   src={text100}
-                  alt=""
+                  alt="Texto en SVG ('100 bolos')"
                   isvisible={isVisible2 ? 'true' : 'false'}
                   loading="lazy"
                 />
@@ -203,14 +203,14 @@ export default function Logros() {
               <img
                 className={styles.pin100Pins}
                 src={palos100}
-                alt=""
+                alt="Bolos"
                 loading="lazy"
               />
             </div>
             <img
               className={styles.pin100Glass}
               src={vaso100Palos}
-              alt=""
+              alt="Vaso de regalo"
               loading="lazy"
             />
           </div>
@@ -243,7 +243,7 @@ export default function Logros() {
         <article className={styles.records}>
           <section className={styles.winners}>
             <div className={styles.winnersImg}>
-              <img src={nube} alt="" loading="lazy" />
+              <img src={nube} alt="Nube" loading="lazy" />
               <h2>
                 los cracks de <br />
                 {Intl.DateTimeFormat('es-ES', { month: 'long' }).format(

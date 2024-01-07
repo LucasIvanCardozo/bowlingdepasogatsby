@@ -10,16 +10,16 @@ export default function Marcas() {
     <aside className={styles.container}>
       <ul>
         <li>
-          <img src={quilmes} alt="" loading="lazy" />
+          <img src={quilmes} alt="Logo de la marca Quilmes" loading="lazy" />
         </li>
         <li>
           <img src={patagonia} alt="" loading="lazy" />
         </li>
         <li>
-          <img src={stella} alt="" loading="lazy" />
+          <img src={stella} alt="Logo de la marca Stella" loading="lazy" />
         </li>
         <li>
-          <img src={coca} alt="" loading="lazy" />
+          <img src={coca} alt="Logo de la marca Coca-Cola" loading="lazy" />
         </li>
       </ul>
     </aside>

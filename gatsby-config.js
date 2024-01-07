@@ -8,13 +8,21 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
           placeholder: `none`,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        https: true,
+        www: true,
+        DisallowSymLinks: true,
+        host: 'www.bowlingdepaso.com',
       },
     },
   ],
