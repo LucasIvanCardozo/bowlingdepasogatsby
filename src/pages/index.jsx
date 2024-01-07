@@ -43,7 +43,9 @@ const IndexPage = () => {
             loading="lazy"
             type="img/svg"
           />
-          <LogoTexto />
+          <h1>
+            <LogoTexto />
+          </h1>
           <img
             className={styles.pin}
             src={pin}
@@ -165,7 +167,7 @@ export const Head = () => (
     <title>Bowling de Paso</title>
     <meta
       name="description"
-      content="¡Divertite al máximo en nuestro moderno bowling de Mar del Plata! Ven a Cordoba 3766 y disfrutá de emocionantes partidas de bolos y deliciosos aperitivos. Nuestro centro de entretenimiento ofrece diversión para todas las edades. ¡Uníte a la diversión de los bolos en el corazón de Mar del Plata!"
+      content="¡Disfruta al máximo en nuestro moderno bowling en Mar del Plata! Ven a Cordoba 3766 para emocionantes partidas de bolos y deliciosos aperitivos. Diversión para todas las edades en el corazón de Mar del Plata."
     />
     <meta charSet="utf-8" />
     <meta
@@ -173,9 +175,9 @@ export const Head = () => (
       content="width=device-width,initial-scale=1, minimum-scale=1"
     />
     <meta name="robots" content="index, follow" />
-    <meta name="language" content="Spanish" />
+    <meta name="language" content="es" />
     <meta name="author" content="Lucas Iván Cardozo" />
-    <link rel="canonical" href="http://bowlingdepaso.com" />
+    <link rel="canonical" href="https://www.bowlingdepaso.com" />
     <link rel="icon" href="/favicon.ico" type="image/ico"></link>
     <link
       rel="preload"

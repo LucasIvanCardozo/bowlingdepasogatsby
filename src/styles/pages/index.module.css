@@ -17,6 +17,10 @@
   overflow: hidden;
 }
 
+h1 {
+  font-size: 1rem;
+}
+
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,19 +424,19 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .main {
+  h1 {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .main {
+  h1 {
     font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .main {
+  h1 {
     font-size: 2.1rem;
   }
 }

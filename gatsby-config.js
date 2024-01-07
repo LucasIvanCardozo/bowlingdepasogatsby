@@ -19,6 +19,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-htaccess',
       options: {
+        RewriteBase: true,
         https: true,
         www: true,
         DisallowSymLinks: true,
