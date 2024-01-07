@@ -113,7 +113,7 @@ export const Head = () => (
     <title>Bowling de Paso - Historia</title>
     <meta
       name="description"
-      content="Descubre la apasionante trayectoria de Bowling de Paso: tu destino de entretenimiento en Mar del Plata. Desde nuestros humildes inicios en Cordoba 3766, hemos evolucionado hasta convertirnos en el epicentro del entretenimiento con bolos en la ciudad. Acompáñanos en un recorrido a través de los años, explorando los momentos emblemáticos, las mejoras en nuestras instalaciones y la dedicación constante para brindarte una experiencia de bolos inigualable. ¡Únete a nosotros y forma parte de la historia de Bowling de Paso mientras creamos recuerdos y diversión para la comunidad marplatense!"
+      content="Descubre la historia de Bowling de Paso en Mar del Plata, desde humildes inicios hasta ser el epicentro del entretenimiento. Crea recuerdos con nosotros!"
     />
 
     <meta charSet="utf-8" />

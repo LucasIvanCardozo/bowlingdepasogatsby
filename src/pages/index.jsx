@@ -94,14 +94,13 @@ const IndexPage = () => {
               />
             </div>
             <p>
-              ¡Tenemos <b>grandes noticias</b>! Nos mudamos a un nuevo lugar{' '}
-              <b>espectacular</b>, más amplio y completamente renovado para
-              brindarte una experiencia de entretenimiento <b>única</b>. Desde
-              el momento en que ingresás, te va a encantar nuestro diseño{' '}
-              <b>moderno</b> y <b>elegante</b>. Además ahora te ofrecemos más
-              opciones gastronómicas y áreas de descanso mejoradas. Vení y
-              descubrí todo lo que preparamos para vos en nuestra nueva
-              ubicación.
+              ¡Tenemos grandes noticias! Nos mudamos a un nuevo lugar{' '}
+              espectacular, más amplio y completamente renovado para brindarte
+              una experiencia de entretenimiento única. Desde el momento en que
+              ingresás, te va a encantar nuestro diseño moderno y elegante.
+              Además ahora te ofrecemos más opciones gastronómicas y áreas de
+              descanso mejoradas. Vení y descubrí todo lo que preparamos para
+              vos en nuestra nueva ubicación.
             </p>
           </div>
         </section>
@@ -120,12 +119,11 @@ const IndexPage = () => {
               />
             </div>
             <p>
-              ¡Vení a nuestro <b>bowling</b> y pasá un rato <b>inolvidable</b>!
-              Podés festejar tu cumpleaños, ganar <b>líneas gratis</b> y
-              disfrutar de diversión asegurada. Además, te ofrecemos una
-              variedad de <b>comidas</b>, <b>cervezas</b> y <b>cócteles</b> en
-              un ambiente <b>increíble</b>. ¡Te esperamos para vivir momentos{' '}
-              <b>geniales</b>! Es el plan perfecto <b>para vos</b>. ¡No te lo
+              ¡Vení a nuestro bowling y pasá un rato inolvidable! Podés festejar
+              tu cumpleaños, ganar <b>líneas gratis</b> y disfrutar de diversión
+              asegurada. Además, te ofrecemos una variedad de comidas, cervezas
+              y cócteles en un ambiente increíble. ¡Te esperamos para vivir
+              momentos geniales! Es el plan perfecto <b>para vos</b>. ¡No te lo
               podés perder!
             </p>
           </div>
@@ -148,7 +146,7 @@ const IndexPage = () => {
               ¡Sumérgete en una experiencia de entretenimiento completa en
               nuestro centro renovado! Aquí encontrarás una emocionante variedad
               de actividades para disfrutar al máximo. Además del fascinante{' '}
-              <b>bowling</b>, podés deleitarte con nuestras increíbles{' '}
+              bowling, podés deleitarte con nuestras increíbles{' '}
               <b>maquinitas arcade</b> y nuestra <b>mesa de pool profesional</b>
               . La diversión está garantizada para todos los gustos y edades.
             </p>
@@ -164,10 +162,10 @@ export default IndexPage;
 export const Head = () => (
   <>
     <html lang="es" />
-    <title>Bowling de Paso</title>
+    <title>Bowling de Paso - Mar del Plata</title>
     <meta
       name="description"
-      content="¡Disfruta al máximo en nuestro moderno bowling en Mar del Plata! Ven a Cordoba 3766 para emocionantes partidas de bolos y deliciosos aperitivos. Diversión para todas las edades en el corazón de Mar del Plata."
+      content="Diviértete en nuestro moderno bowling en Mar del Plata. Bolos, aperitivos y diversión para todas las edades. ¡Únete!"
     />
     <meta charSet="utf-8" />
     <meta

@@ -100,7 +100,8 @@ export const Head = () => (
     <title>Bowling de Paso - Menu</title>
     <meta
       name="description"
-      content="Explora nuestra deliciosa y variada carta en Bowling de Paso, Mar del Plata. Desde tentadoras comidas hasta refrescantes bebidas e increibles postres, nuestra selección está diseñada para satisfacer todos los gustos. Descubre una amplia gama de opciones cuidadosamente preparadas para acompañar tus partidas de bolos y hacer que tu experiencia sea aún más especial. Ya sea que estés buscando un aperitivo rápido o una comida completa, encontrarás opciones deliciosas que harán que tu visita sea memorable."
+      content="Explora nuestra deliciosa carta en Bowling de Paso, Mar del Plata. Comidas, bebidas y postres para hacer tu experiencia memorable. ¡Ven y disfruta!
+"
     />
     <meta charSet="utf-8" />
     <meta

@@ -292,7 +292,8 @@ export const Head = () => (
     <title>Bowling de Paso - Premios</title>
     <meta
       name="description"
-      content="Descubre el emocionante mundo de recompensas y logros en Bowling de Paso, Mar del Plata. Celebra tus éxitos en el bowling con nuestros increíbles premios por puntos acumulados. Reconocemos tus logros de manera única!. Además, sumérgete en nuestro álbum de fotos mensual que destaca a los campeones del último mes. Explora las caras de satisfacción y los momentos de gloria capturados en imágenes mientras te inspiras para alcanzar la grandeza en nuestras pistas. Únete a la comunidad de ganadores en Bowling de Paso y sé parte de nuestros destacados y memorables hitos."
+      content="Explora recompensas y logros en Bowling de Paso, Mar del Plata. Celebra éxitos con premios y únete a la comunidad ganadora. ¡Inspírate para la grandeza!
+"
     />
 
     <meta charSet="utf-8" />
