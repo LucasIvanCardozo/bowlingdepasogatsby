@@ -1,0 +1,11 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.titulo{
+ font-size: 3em;
+}

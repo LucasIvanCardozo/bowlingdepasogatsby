@@ -75,19 +75,21 @@ export default function Logros() {
   }, []);
 
   useEffect(() => {
+    const scoreboardAux = [];
     for (let i = 0; i < 10; i++) {
       if (i === 0) {
         const randomDer = Math.floor(Math.random() * 8);
         const randomIzq = Math.floor(Math.random() * 9 - randomDer);
         const suma = randomDer + randomIzq;
-        scoreboard.push({ der: randomDer, izq: randomIzq, sum: suma });
+        scoreboardAux.push({ der: randomDer, izq: randomIzq, sum: suma });
       } else {
         const randomDer = Math.floor(Math.random() * 8);
         const randomIzq = Math.floor(Math.random() * (10 - randomDer));
-        const sumaTotal = randomIzq + randomDer + scoreboard[i - 1].sum;
-        scoreboard.push({ der: randomDer, izq: randomIzq, sum: sumaTotal });
+        const sumaTotal = randomIzq + randomDer + scoreboardAux[i - 1].sum;
+        scoreboardAux.push({ der: randomDer, izq: randomIzq, sum: sumaTotal });
       }
     }
+    setScoreboard(scoreboardAux);
   }, []);
 
   return (

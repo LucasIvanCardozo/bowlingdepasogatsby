@@ -19,6 +19,12 @@ html {
   /* 2 */
 }
 
+#gatsby-focus-wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Sections
    ========================================================================== */
 

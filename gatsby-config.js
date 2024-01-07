@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Bowling de Paso`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Bowling de Paso - Mar del Plata`,
+    siteUrl: `https://www.bowlingdepaso.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -26,5 +26,6 @@ module.exports = {
         host: 'www.bowlingdepaso.com',
       },
     },
+    'gatsby-plugin-sitemap',
   ],
 };
