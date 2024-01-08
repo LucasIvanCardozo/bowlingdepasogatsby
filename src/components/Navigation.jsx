@@ -88,7 +88,7 @@ export default function Navigation() {
         {...(width <= 720
           ? menuOpen
             ? {}
-            : { style: { width: menuDisplay } }
+            : { style: { width: menuDisplay, padding: menuDisplay } }
           : {})}
         open={menuOpen}
       >

@@ -27,5 +27,17 @@ module.exports = {
       },
     },
     'gatsby-plugin-sitemap',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Bowling de Paso - Mar del Plata`,
+        short_name: `Bowling de Paso`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        icon: `src/assets/favicon.png`,
+        display: `standalone`,
+      },
+    },
   ],
 };

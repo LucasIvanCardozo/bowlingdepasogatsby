@@ -109,41 +109,23 @@
     position: fixed;
     display: flex;
     overflow: hidden;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin: 0;
     list-style: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     background-color: #222222;
     top: 0;
     left: 100%;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: 100vh;
     padding: 60px 10px;
-    -webkit-transform: translateX(5px);
-    -ms-transform: translateX(5px);
     transform: translateX(5px);
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    -o-transition: transform 0.3s;
     transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
-    width: 0;
   }
 
   .container ul[open] {
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
     transform: translateX(-100%);
-    width: auto;
   }
 
   .container li {

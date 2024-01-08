@@ -136,7 +136,7 @@ const IndexPage = () => {
           >
             <StaticImage
               src="../assets/images/maquinita.webp"
-              alt="imagen del bowling"
+              alt="Maquinita de juegos"
               loading="lazy"
             />
           </div>
@@ -165,7 +165,7 @@ export const Head = () => (
     <title>Bowling de Paso - Mar del Plata</title>
     <meta
       name="description"
-      content="Diviértete en nuestro moderno bowling en Mar del Plata. Bolos, aperitivos y diversión para todas las edades. ¡Únete!"
+      content="Diviértete en nuestro moderno bowling en Mar del Plata. Bolos, aperitivos y diversión para todas las edades. ¡Únete! Abierto de 17hs a 2:30hs."
     />
     <meta charSet="utf-8" />
     <meta
@@ -176,7 +176,6 @@ export const Head = () => (
     <meta name="language" content="es" />
     <meta name="author" content="Lucas Iván Cardozo" />
     <link rel="canonical" href="https://www.bowlingdepaso.com" />
-    <link rel="icon" href="/favicon.ico" type="image/ico"></link>
     <link
       rel="preload"
       href={bebasNeue}

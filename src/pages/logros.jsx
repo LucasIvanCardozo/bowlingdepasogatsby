@@ -305,7 +305,6 @@ export const Head = () => (
     />
     <meta name="language" content="es" />
     <meta name="author" content="Lucas Iván Cardozo" />
-    <link rel="icon" href="/favicon.ico" type="image/ico"></link>
     <link
       rel="preload"
       href={bebasNeue}
