@@ -28,16 +28,26 @@ export default function Navigation() {
   }, []);
 
   useEffect(() => {
-    if (width >= 720) setMenuOpen(false);
+    if (width >= 720 && menuOpen) {
+      setTimeout(() => {
+        setMenuDisplay('0');
+      }, 300);
+      setMenuOpen(false);
+    }
   }, [width]);
 
   useEffect(() => {
-    if (width <= 720) setMenuOpen(false);
+    if (width <= 720 && menuOpen) {
+      setTimeout(() => {
+        setMenuDisplay('0');
+      }, 300);
+      setMenuOpen(false);
+    }
   }, [selected]);
 
   const handleNav = (page) => {
     setSelected(page);
-    setMenuOpen(false);
+    handleButton();
   };
 
   const handleMenu = () => {
