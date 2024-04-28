@@ -168,10 +168,6 @@ export const Head = () => (
       content="Diviértete en nuestro moderno bowling en Mar del Plata. Bolos, aperitivos y diversión para todas las edades. ¡Únete! Abierto de 17hs a 2:30hs."
     />
     <meta charSet="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1, minimum-scale=1"
-    />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="es" />
     <meta name="author" content="Lucas Iván Cardozo" />

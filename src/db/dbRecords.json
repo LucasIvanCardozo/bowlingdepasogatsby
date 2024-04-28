@@ -1,65 +1,51 @@
 [
   {
-    "name":"lucas",
-    "lastName":"cardozo",
-    "age":"24",
-    "date":"aug 22,2023",
-    "record":120
+    "name": "lucas",
+    "lastName": "cardozo",
+    "age": "24",
+    "date": "aug 22,2023",
+    "record": 120
   },
   {
-    "name":"felipe",
-    "lastName":"cardozo",
-    "age":"19",
-    "date":"aug 22,2023",
-    "record":115
+    "name": "felipe",
+    "lastName": "cardozo",
+    "age": "19",
+    "date": "aug 22,2023",
+    "record": 115
   },
   {
-    "name":"bautista",
-    "lastName":"risoli",
-    "age":"20",
-    "date":"aug 22,2023",
-    "record":107
+    "name": "bautista",
+    "lastName": "risoli",
+    "age": "20",
+    "date": "aug 22,2023",
+    "record": 107
   },
   {
-    "name":"enzo",
-    "lastName":"rodrigues",
-    "age":"24",
-    "date":"aug 22,2023",
-    "record":112
+    "name": "enzo",
+    "lastName": "rodrigues",
+    "age": "24",
+    "date": "aug 22,2023",
+    "record": 112
   },
   {
-    "name":"ana",
-    "lastName":"valero",
-    "age":"18",
-    "date":"aug 22,2023",
-    "record":111
+    "name": "ana",
+    "lastName": "valero",
+    "age": "18",
+    "date": "aug 22,2023",
+    "record": 111
   },
   {
-    "name":"monica",
-    "lastName":"asensio",
-    "age":"52",
-    "date":"aug 22,2023",
-    "record":102
+    "name": "monica",
+    "lastName": "asensio",
+    "age": "52",
+    "date": "aug 22,2023",
+    "record": 102
   },
   {
-    "name":"meli",
-    "lastName":"maz",
-    "age":"28",
-    "date":"aug 22,2022",
-    "record":119
-  },
-  {
-    "name":"meli",
-    "lastName":"maz",
-    "age":"28",
-    "date":"aug 22,2023",
-    "record":115
-  },
-  {
-    "name":"federico",
-    "lastName":"rubilar",
-    "age":"24",
-    "date":"aug 22,2023",
-    "record":145
+    "name": "federico",
+    "lastName": "rubilar",
+    "age": "24",
+    "date": "aug 22,2023",
+    "record": 145
   }
 ]
