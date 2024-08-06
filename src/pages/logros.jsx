@@ -9,8 +9,6 @@ import ball from '../assets/images/elipse.svg';
 import text100 from '../assets/images/100PalosTexto.svg';
 import palos100 from '../assets/images/100Palos.svg';
 import vaso100Palos from '../assets/images/vaso100Palos.webp';
-import palos130 from '../assets/images/130Palos.svg';
-import text130 from '../assets/images/130PalosTexto.svg';
 import flecha from '../assets/images/flecha.svg';
 import Confetis from '../components/Confetis';
 import Anotacion from '../components/anotacion';
@@ -32,7 +30,6 @@ export default function Logros() {
   });
 
   useEffect(() => {
-    const dateNow = Date.now();
     const lastMonth = people
       // esto se quita para evitar que filtre los datos en los del ultimo mes
       /*.filter((person) => {

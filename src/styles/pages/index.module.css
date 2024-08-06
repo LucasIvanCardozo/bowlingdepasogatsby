@@ -142,6 +142,7 @@ h1 {
   background-size: cover;
   -webkit-box-shadow: 0 0px 5px 0px #222;
   box-shadow: 0 0px 5px 0px #222;
+  overflow-x: hidden;
 }
 
 .intro {
