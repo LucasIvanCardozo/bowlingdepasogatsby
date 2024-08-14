@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as styles from '../styles/pages/index.module.css';
 import LogoTexto from '../components/logoTexto';
 import estrellas from '../assets/images/estrellas.svg';
+import video from '../assets/images/video.mp4';
 import pin from '../assets/images/boloBlanco.svg';
 /* import imagen1 from '../assets/images/imagen1.webp'; */
 /* import imagen2 from '../assets/images/imagen2.webp'; */
@@ -87,11 +88,7 @@ const IndexPage = () => {
               ref={elementRef}
               isvisible={isVisible ? 'true' : 'false'}
             >
-              <StaticImage
-                src="../assets/images/imagen1.webp"
-                alt="imagen del bowling"
-                loading="lazy"
-              />
+              <video src={video} loop autoPlay muted></video>
             </div>
             <p>
               ¡Tenemos grandes noticias! Nos mudamos a un nuevo lugar{' '}
@@ -113,7 +110,7 @@ const IndexPage = () => {
               isvisible={isVisible2 ? 'true' : 'false'}
             >
               <StaticImage
-                src="../assets/images/imagen2.webp"
+                src="../assets/images/imagen.webp"
                 alt="imagen del bowling"
                 loading="lazy"
               />
