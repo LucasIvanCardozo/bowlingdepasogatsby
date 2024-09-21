@@ -28,6 +28,6 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-  "gh-pages": "6.1.1"
+    "gh-pages": "6.1.1"
   }
 }

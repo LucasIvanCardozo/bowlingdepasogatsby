@@ -2,6 +2,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/bowlingdepasogatsby",
   siteMetadata: {
     title: `Bowling de Paso - Mar del Plata`,
     siteUrl: `https://www.bowlingdepaso.com`,
