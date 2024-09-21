@@ -110,7 +110,7 @@ const IndexPage = () => {
               isvisible={isVisible2 ? 'true' : 'false'}
             >
               <StaticImage
-                src="../assets/images/imagen.webp"
+                src="../assets/images/imagen1.webp"
                 alt="imagen del bowling"
                 loading="lazy"
               />
