@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkbowling_de_paso=self.webpackChunkbowling_de_paso||[]).push([[256],{7291:function(e,n,t){t.r(n),t.d(n,{Head:function(){return r}});var l=t(7294);n.default=()=>l.createElement(l.Fragment,null,l.createElement("h1",null,"este es el error 404"));const r=()=>l.createElement("title",null,"Not found")}}]);
-//# sourceMappingURL=component---src-pages-404-jsx-0ae90ef4cef320cb8faa.js.map
