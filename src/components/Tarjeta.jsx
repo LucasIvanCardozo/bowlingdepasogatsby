@@ -33,7 +33,12 @@ export default function Tarjeta({ name, lastName, age, img, record, pos }) {
         loading="lazy"
       />
       <div className={styles.front} verinfo={verInfo ? 'true' : undefined}>
-        <img src={img} loading="lazy" alt={`Imagen de ${name}`} />
+        {/* <img src={img} loading="lazy" alt={`Imagen de ${name}`} /> */}
+        <StaticImage
+          src="../assets/images/fondoCarta.webp"
+          alt="imagen de jugador"
+          loading="lazy"
+        />
         <button>
           <p>ver info</p>
         </button>
