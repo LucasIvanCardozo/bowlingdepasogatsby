@@ -257,7 +257,7 @@ export default function Logros() {
                   name={name}
                   lastName={lastName}
                   age={age}
-                  img={`/static/records/${name}${lastName}.webp`}
+                  img={`../assets/images/fondoCarta.webp`}
                   record={record}
                   pos={index + 1}
                 />
@@ -273,7 +273,7 @@ export default function Logros() {
                   name={name}
                   lastName={lastName}
                   age={age}
-                  img={`/static/records/${name}${lastName}.webp`}
+                  img={`../assets/images/fondoCarta.webp`}
                   record={record}
                 />
               ))}

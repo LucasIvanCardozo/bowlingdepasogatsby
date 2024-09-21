@@ -5,7 +5,6 @@ import bolo from '../assets/images/boloBlanco.svg';
 import medal1 from '../assets/images/medal1.webp';
 import medal2 from '../assets/images/medal2.webp';
 import medal3 from '../assets/images/medal3.webp';
-import { StaticImage } from 'gatsby-plugin-image';
 
 export default function Tarjeta({ name, lastName, age, img, record, pos }) {
   const [verInfo, setVerInfo] = useState(false);
@@ -34,12 +33,7 @@ export default function Tarjeta({ name, lastName, age, img, record, pos }) {
         loading="lazy"
       />
       <div className={styles.front} verinfo={verInfo ? 'true' : undefined}>
-        {/* <img src={img} loading="lazy" alt={`Imagen de ${name}`} /> */}
-        <StaticImage
-          src="../assets/images/fondoCarta.webp"
-          alt="imagen de jugador"
-          loading="lazy"
-        />
+        <img src={img} loading="lazy" alt={`Imagen de ${name}`} />
         <button>
           <p>ver info</p>
         </button>
