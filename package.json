@@ -12,18 +12,22 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
-    "gatsby": "5.11.0",
+    "gatsby": "5.13.7",
     "gatsby-plugin-htaccess": "1.4.0",
-    "gatsby-plugin-image": "3.12.0",
-    "gatsby-plugin-manifest": "5.13.0",
-    "gatsby-plugin-sharp": "5.12.0",
-    "gatsby-plugin-sitemap": "6.13.0",
-    "gatsby-source-filesystem": "5.13.0",
-    "gatsby-transformer-sharp": "5.12.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "gatsby-plugin-image": "3.13.1",
+    "gatsby-plugin-manifest": "5.13.1",
+    "gatsby-plugin-sharp": "5.13.1",
+    "gatsby-plugin-sitemap": "6.13.1",
+    "gatsby-source-filesystem": "5.13.1",
+    "gatsby-transformer-sharp": "5.13.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "gh-pages": "6.1.1"
   }
 }
