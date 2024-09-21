@@ -1,11 +1,17 @@
 import * as React from 'react';
 import * as styles from '../styles/components/tarjetaAlbum.module.css';
 import bolo from '../assets/images/boloBlanco.svg';
+import { StaticImage } from 'gatsby-plugin-image';
 
 export default function TarjetaAlbum({ name, lastName, age, img, record }) {
   return (
     <li className={styles.container}>
-      <img src={img} alt={`Imagen de ${name} ${lastName}`} loading="lazy" />
+      <StaticImage
+        src="../assets/images/fondoCarta.webp"
+        alt="imagen de jugador"
+        loading="lazy"
+      />
+      {/* <img src={img} alt={`Imagen de ${name} ${lastName}`} loading="lazy" /> */}
       <div className={styles.personData}>
         <p>
           {name} {lastName}
