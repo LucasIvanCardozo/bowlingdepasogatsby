@@ -2,14 +2,9 @@
 
 ## Descripción
 
-Este repositorio contiene el código fuente de una página web responsive para el Bowling de Mar del Plata. La aplicación fue desarrollada utilizando React JS, una biblioteca de JavaScript de código abierto para la construcción de interfaces de usuario interactivas. La página está diseñada para proporcionar una experiencia en línea informativa y se adapta a diversos dispositivos, incluyendo computadoras de escritorio, tabletas y teléfonos móviles.
+Este repositorio contiene el código fuente de la página web oficial del Bowling de Mar del Plata. La plataforma ha sido diseñada para ofrecer una visión completa y atractiva de lo que el bowling tiene para ofrecer a sus visitantes. 
 
-## Características
-
-- **Responsive:** Diseño adaptable a distintos tamaños de pantalla.
-- **SEO:** Implementación de prácticas de optimización para motores de búsqueda.
-- **React JS:** Estructura modular y eficiente para el desarrollo de interfaces.
-
-## Contacto
-
-Para consultas o comentarios sobre el proyecto, puedes ponerte en contacto con el desarrollador.
+El sitio se organiza en tres secciones principales:
+- **Carta del Restaurante:** Presenta la oferta gastronómica, permitiendo a los usuarios conocer los platos y bebidas destacados, lo que facilita la elección antes de su visita.
+- **Historia del Lugar:** Relata la trayectoria del bowling, destacando su legado, evolución y el ambiente único que lo caracteriza a lo largo de los años.
+- **Mejores Jugadores:** Cada mes se actualiza un apartado dedicado a reconocer a los jugadores más destacados, mostrando quiénes han brillado en la pista y fomentando la competitividad y la comunidad.
